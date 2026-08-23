@@ -30,6 +30,9 @@ body { font-family: "Cormorant Garamond", Georgia, serif; font-size: 13.5pt; lin
 .print-cover-type .book-quote { max-width: none; font-size: 15pt !important; }
 .room { break-before: page; }
 .room > h1 { color: #214a3b !important; font-size: 30pt; margin: 0.1in 0 0.3in; }
+.expanded-room > h1 + figure { margin-top: 0 !important; }
+.expanded-room > h1 + figure img { max-height: 7.2in !important; }
+.print-edition #herb-library-root, .print-edition #molecule-library-root { display: none !important; }
 .room > .book-layout, .room > .page-content { display: block !important; }
 .expanded-room > section, .expanded-room > article { break-inside: auto; }
 .room p, .room li, .room td, .room th { color: #574438 !important; }
