@@ -385,6 +385,13 @@ ul {
   object-fit: cover;
 }
 
+.book-frontispiece img {
+  aspect-ratio: auto;
+  max-height: 72rem;
+  object-fit: contain;
+  background: #0c1b16;
+}
+
 .history-hero {
   background:
     radial-gradient(circle at top right, rgba(82, 123, 89, 0.18), transparent 34%),
