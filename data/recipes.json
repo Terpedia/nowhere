@@ -98,8 +98,21 @@
       }
     ],
     "formulaCard": {
-      "status": "Pilot specification; batch actuals required before production",
-      "unit": "Record every botanical as grams per litre of finished spirit",
+      "status": "Normalized bench specification from Nowhere Formulations; production actuals still required",
+      "unit": "1.000 kg total botanicals; record normalized grams, then record final spirit volume and ABV separately",
+      "normalizedBill": [
+        ["Grand wormwood", 150, "Still charge"],
+        ["Roman wormwood", 100, "Still charge"],
+        ["Green anise", 200, "Still charge"],
+        ["Florence fennel", 150, "Still charge"],
+        ["Coriander seed", 100, "Still charge"],
+        ["Lemon balm", 100, "Coloration maceration"],
+        ["Hyssop", 100, "Coloration maceration"],
+        ["Angelica root", 75, "Still charge"],
+        ["Gentian", 12.5, "Cold extract"],
+        ["Mint", 12.5, "Cold extract"]
+      ],
+      "estimatedBotanicalCostUsd": 53.01,
       "requiredRecords": [
         "Botanical mass, plant part, supplier or garden lot, and moisture state",
         "Maceration or distillation time, temperature, charge volume, and recovered distillate",
@@ -113,7 +126,7 @@
         "No marketing or sensory claim is upgraded until the actuals and sensory sheet agree"
       ],
       "openVariables": [
-        "Exact botanical weights",
+        "Final production weights and recovered distillate yield",
         "Distillate oil concentration and proof",
         "Coloration duration and final water source"
       ]
@@ -307,8 +320,24 @@
       }
     ],
     "formulaCard": {
-      "status": "Pilot specification; batch actuals required before production",
-      "unit": "Record every botanical as grams per litre of finished spirit",
+      "status": "Normalized bench specification from Nowhere Formulations; production actuals still required",
+      "unit": "1.000 kg total botanicals; record normalized grams, then record final spirit volume and ABV separately",
+      "normalizedBill": [
+        ["Grand wormwood", 106.7, "Still charge"],
+        ["Roman wormwood", 80, "Still charge"],
+        ["Green anise", 160, "Still charge"],
+        ["Florence fennel", 106.7, "Still charge"],
+        ["Star anise", 53.3, "Still charge"],
+        ["Coriander seed", 106.7, "Still charge"],
+        ["Orange peel", 106.7, "Still charge"],
+        ["Angelica root", 53.3, "Still charge"],
+        ["Hibiscus finish", 106.7, "Cold extract"],
+        ["Rosehip finish", 80, "Cold extract"],
+        ["Grains of paradise", 13.3, "Still charge"],
+        ["Cardamom", 13.3, "Still charge"],
+        ["Rose petal", 13.3, "Cold extract"]
+      ],
+      "estimatedBotanicalCostUsd": 40.68,
       "requiredRecords": [
         "Botanical mass, plant part, supplier or garden lot, and moisture state",
         "Maceration or distillation time, temperature, charge volume, and recovered distillate",
@@ -322,7 +351,7 @@
         "No marketing or sensory claim is upgraded until the actuals and sensory sheet agree"
       ],
       "openVariables": [
-        "Exact botanical weights",
+        "Final production weights and recovered distillate yield",
         "Colorant and acid contribution",
         "Distillate proof, filtration, and final water source"
       ]
@@ -554,8 +583,24 @@
       }
     ],
     "formulaCard": {
-      "status": "Pilot specification; batch actuals required before production",
-      "unit": "Record every botanical as grams per litre of finished spirit",
+      "status": "Normalized bench specification from Nowhere Formulations; production actuals still required",
+      "unit": "1.000 kg total botanicals; record normalized grams, then record final spirit volume and ABV separately",
+      "normalizedBill": [
+        ["Grand wormwood", 88.9, "Still charge"],
+        ["Roman wormwood", 88.9, "Still charge"],
+        ["Green anise", 44.4, "Still charge"],
+        ["Florence fennel", 66.7, "Still charge"],
+        ["Coriander", 177.8, "Still charge"],
+        ["Lemon peel", 133.3, "Still charge"],
+        ["Grapefruit peel", 66.7, "Still charge"],
+        ["Juniper", 88.9, "Still charge"],
+        ["Angelica root", 88.9, "Still charge"],
+        ["Mastic", 22.2, "Maceration"],
+        ["Rosemary", 11.1, "Still charge"],
+        ["Yarrow or gentian", 11.1, "Cold extract"],
+        ["Lemon balm finish", 111.1, "Cold extract"]
+      ],
+      "estimatedBotanicalCostUsd": 47.42,
       "requiredRecords": [
         "Botanical mass, plant part, supplier or garden lot, and moisture state",
         "Maceration or distillation time, temperature, charge volume, and recovered distillate",
@@ -569,7 +614,7 @@
         "No marketing or sensory claim is upgraded until the actuals and sensory sheet agree"
       ],
       "openVariables": [
-        "Exact botanical weights",
+        "Final production weights and recovered distillate yield",
         "Citrus peel load and coloration method",
         "Distillate proof, water hardness, and final dilution"
       ]
@@ -773,8 +818,20 @@
       }
     ],
     "formulaCard": {
-      "status": "Pilot specification; batch actuals required before production",
-      "unit": "Record every botanical as grams per litre of finished spirit",
+      "status": "Normalized bench specification from Nowhere Formulations; production actuals still required",
+      "unit": "1.000 kg total botanicals; record normalized grams, then record final spirit volume and ABV separately",
+      "normalizedBill": [
+        ["Grand wormwood", 133.3, "Still charge"],
+        ["Roman wormwood or genepi", 133.3, "Still charge"],
+        ["Florence fennel", 266.7, "Still charge"],
+        ["Green anise", 133.3, "Still charge"],
+        ["Angelica root or seed", 233.3, "Still charge"],
+        ["Mint", 16.7, "Cold extract"],
+        ["Coriander", 66.7, "Still charge"],
+        ["Cornflower or elderflower", 16.7, "Cold extract"]
+      ],
+      "redlines": ["Hyssop — 0 g; redlined and removed from Bleue"],
+      "estimatedBotanicalCostUsd": 63.58,
       "requiredRecords": [
         "Botanical mass, plant part, supplier or garden lot, and moisture state",
         "Maceration or distillation time, temperature, charge volume, and recovered distillate",
@@ -788,7 +845,7 @@
         "No marketing or sensory claim is upgraded until the actuals and sensory sheet agree"
       ],
       "openVariables": [
-        "Exact botanical weights",
+        "Final production weights and recovered distillate yield",
         "Oil concentration after distillation",
         "Cold-water temperature, hardness, and final proof"
       ]

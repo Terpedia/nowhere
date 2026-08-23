@@ -52,6 +52,10 @@ async function renderRecipePage() {
       .join("");
 
     const formulaCard = recipe.formulaCard || {};
+    const benchBillHtml = (formulaCard.normalizedBill || [])
+      .map(([name, mass, phase]) => `<div class="ledger-row"><div><div class="ledger-name">${name}</div><div>${phase}</div></div><div class="ledger-value">${mass} g</div></div>`)
+      .join("");
+    const redlinesHtml = (formulaCard.redlines || []).map((item) => `<li>${item}</li>`).join("");
     const listHtml = (items = []) => items.map((item) => `<li>${item}</li>`).join("");
     const formulaCardHtml = `
       <article class="panel recipe-formula-card">
@@ -61,6 +65,10 @@ async function renderRecipePage() {
         <div class="recipe-ledger">
           <div class="ledger-row"><div><div class="ledger-name">Reporting unit</div><div>Use this unit for the batch ledger; do not infer grams from sensory adjectives.</div></div><div class="ledger-value">${formulaCard.unit || "Record measured units"}</div></div>
         </div>
+        <h3>Normalized bench bill</h3>
+        <div class="recipe-ledger">${benchBillHtml}</div>
+        ${formulaCard.estimatedBotanicalCostUsd ? `<p class="callout">Planning estimate: $${formulaCard.estimatedBotanicalCostUsd.toFixed(2)} botanical cost per normalized kilogram; excludes spirit, water, labor, packaging, and losses.</p>` : ""}
+        ${redlinesHtml ? `<h3>Redlines</h3><ul>${redlinesHtml}</ul>` : ""}
         <div class="book-two-column recipe-card-columns">
           <div><h3>Required records</h3><ul>${listHtml(formulaCard.requiredRecords)}</ul></div>
           <div><h3>Acceptance gates</h3><ul>${listHtml(formulaCard.acceptanceGates)}</ul></div>
