@@ -353,6 +353,358 @@ ul {
     linear-gradient(180deg, rgba(31, 20, 15, 0.96), rgba(11, 7, 6, 0.96));
 }
 
+.garden-hero {
+  background:
+    radial-gradient(circle at top right, rgba(88, 127, 65, 0.2), transparent 34%),
+    linear-gradient(180deg, rgba(25, 29, 17, 0.96), rgba(11, 7, 6, 0.96));
+}
+
+.garden-table-panel {
+  min-width: 0;
+}
+
+.garden-table-wrap {
+  overflow-x: auto;
+  margin: 1rem -0.35rem -0.35rem;
+}
+
+.garden-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.garden-table th,
+.garden-table td {
+  padding: 0.8rem 0.65rem;
+  border-bottom: 1px solid rgba(213, 163, 93, 0.12);
+  text-align: left;
+  vertical-align: top;
+}
+
+.garden-table th {
+  color: var(--gold);
+  font-family: "Cinzel", serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.garden-table td:first-child {
+  width: 25%;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.garden-table td:nth-child(2) {
+  width: 17%;
+  white-space: nowrap;
+}
+
+.garden-status {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.status-strong {
+  color: #d7efcf;
+  background: rgba(73, 133, 74, 0.34);
+  border: 1px solid rgba(128, 190, 119, 0.4);
+}
+
+.status-good {
+  color: #e5e8bb;
+  background: rgba(132, 132, 54, 0.25);
+  border: 1px solid rgba(190, 181, 94, 0.35);
+}
+
+.status-trial,
+.status-container {
+  color: #f4d8a0;
+  background: rgba(161, 100, 38, 0.25);
+  border: 1px solid rgba(213, 163, 93, 0.36);
+}
+
+.status-source {
+  color: #eab7b0;
+  background: rgba(126, 53, 48, 0.27);
+  border: 1px solid rgba(193, 103, 93, 0.36);
+}
+
+.garden-callout {
+  background:
+    radial-gradient(circle at top right, rgba(85, 123, 62, 0.2), transparent 38%),
+    var(--panel);
+}
+
+.revelation-hero {
+  background:
+    radial-gradient(circle at 85% 12%, rgba(205, 143, 56, 0.22), transparent 28%),
+    linear-gradient(180deg, rgba(25, 24, 22, 0.96), rgba(11, 7, 6, 0.96));
+}
+
+.revelation-image img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.revelation-callout {
+  background:
+    radial-gradient(circle at top right, rgba(145, 116, 44, 0.2), transparent 38%),
+    var(--panel);
+}
+
+blockquote {
+  margin: 1rem 0 1.2rem;
+  padding: 1rem 1.15rem;
+  border-left: 3px solid rgba(213, 163, 93, 0.45);
+  color: #f2dfba;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+
+.greek-line {
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  border: 1px solid rgba(213, 163, 93, 0.14);
+  border-radius: 16px;
+  background: rgba(213, 163, 93, 0.05);
+  color: #f0d29e;
+  font-family: Georgia, serif;
+  font-size: 1.18rem;
+  line-height: 1.6;
+}
+
+.source-line {
+  font-size: 0.88rem;
+}
+
+.psychoactivity-hero {
+  background:
+    radial-gradient(circle at top right, rgba(119, 62, 53, 0.24), transparent 34%),
+    linear-gradient(180deg, rgba(33, 18, 18, 0.96), rgba(11, 7, 6, 0.96));
+}
+
+.psycho-callout {
+  background:
+    radial-gradient(circle at top right, rgba(146, 57, 45, 0.2), transparent 38%),
+    var(--panel);
+}
+
+.psycho-table-wrap {
+  overflow-x: auto;
+  margin: 1rem -0.35rem -0.35rem;
+}
+
+.psycho-table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.psycho-table th,
+.psycho-table td {
+  padding: 0.8rem 0.65rem;
+  border-bottom: 1px solid rgba(213, 163, 93, 0.12);
+  text-align: left;
+  vertical-align: top;
+}
+
+.psycho-table th {
+  color: var(--gold);
+  font-family: "Cinzel", serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.psycho-table td:first-child {
+  width: 25%;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.pathway-flow,
+.pathway-branch {
+  display: flex;
+  align-items: stretch;
+  gap: 0.55rem;
+  margin: 1.25rem 0;
+  overflow-x: auto;
+  padding: 0.2rem 0.1rem 0.65rem;
+}
+
+.pathway-branch {
+  margin-top: 0.9rem;
+}
+
+.pathway-node {
+  flex: 1 0 10.5rem;
+  min-height: 9rem;
+  padding: 0.85rem;
+  border: 1px solid rgba(213, 163, 93, 0.2);
+  border-radius: 18px;
+  background: rgba(213, 163, 93, 0.05);
+}
+
+.pathway-node strong,
+.pathway-node span,
+.pathway-node small {
+  display: block;
+}
+
+.crowley-hero {
+  background:
+    radial-gradient(circle at top right, rgba(78, 117, 61, 0.26), transparent 34%),
+    linear-gradient(180deg, rgba(22, 29, 18, 0.96), rgba(11, 7, 6, 0.96));
+}
+
+.crowley-callout {
+  background:
+    radial-gradient(circle at top right, rgba(75, 116, 63, 0.24), transparent 38%),
+    var(--panel);
+}
+
+.crowley-figure {
+  padding: 0;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(86, 140, 83, 0.24), transparent 34%),
+    linear-gradient(180deg, rgba(12, 25, 17, 0.98), rgba(8, 7, 6, 0.98));
+}
+
+.crowley-figure img {
+  aspect-ratio: 16 / 8.5;
+  object-fit: cover;
+}
+
+.crowley-steps {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.1rem;
+}
+
+.crowley-step {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 0.85rem;
+  padding: 0.9rem;
+  border: 1px solid rgba(213, 163, 93, 0.14);
+  border-radius: 18px;
+  background: rgba(213, 163, 93, 0.04);
+}
+
+.crowley-step > span {
+  color: var(--gold);
+  font-family: "Cinzel", serif;
+  font-size: 1.05rem;
+}
+
+.crowley-step h3 {
+  margin-bottom: 0.25rem;
+}
+
+.crowley-step p {
+  margin: 0;
+}
+
+.full-text-panel {
+  padding: 1.2rem 1.45rem;
+}
+
+.full-text-panel summary {
+  cursor: pointer;
+  color: var(--gold);
+  font-family: "Cinzel", serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.full-text-note {
+  margin: 1rem 0 1.4rem;
+  font-size: 0.88rem;
+}
+
+.essay-text {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(213, 163, 93, 0.16);
+}
+
+.essay-text h3 {
+  margin: 1.8rem 0 0.7rem;
+  color: var(--gold);
+}
+
+.essay-text h3:first-child {
+  margin-top: 0;
+}
+
+.essay-text p {
+  margin: 0 0 1rem;
+}
+
+.essay-verse {
+  padding: 1rem 1.1rem;
+  border-left: 3px solid rgba(213, 163, 93, 0.35);
+  color: #f0d29e;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.15rem;
+  line-height: 1.55;
+}
+
+.pathway-node strong {
+  color: var(--ink);
+  font-family: "Cinzel", serif;
+  font-size: 0.88rem;
+}
+
+.pathway-node span {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.pathway-node small {
+  margin-top: 0.7rem;
+  color: var(--gold);
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+.pathway-arrow {
+  align-self: center;
+  color: var(--gold);
+  font-size: 1.25rem;
+}
+
+.pathway-observed {
+  border-color: rgba(213, 163, 93, 0.42);
+}
+
+.pathway-direct {
+  border-color: rgba(102, 172, 124, 0.5);
+  background: rgba(45, 96, 57, 0.16);
+}
+
+.pathway-candidate {
+  border-color: rgba(190, 181, 94, 0.46);
+  background: rgba(132, 132, 54, 0.1);
+}
+
+.pathway-hypothesis {
+  border-color: rgba(193, 103, 93, 0.46);
+  background: rgba(126, 53, 48, 0.12);
+}
+
 .history-timeline {
   display: grid;
   gap: 0.85rem;
@@ -390,6 +742,41 @@ ul {
 
 .hero-image figcaption {
   padding: 0.95rem 1.2rem 1.2rem;
+}
+
+.sword-module {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(35, 144, 83, 0.2), transparent 30%),
+    linear-gradient(135deg, rgba(13, 31, 21, 0.98), rgba(11, 9, 8, 0.98));
+}
+
+.sword-module-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sword-figure {
+  margin: 0;
+  padding: 0.5rem;
+  border: 1px solid rgba(102, 172, 124, 0.24);
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.sword-figure img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.sword-figure figcaption {
+  padding: 0.5rem 0.4rem 0.2rem;
+  color: var(--muted);
+  font-size: 0.82rem;
 }
 
 .herb-grid,
@@ -608,7 +995,8 @@ ul {
   }
 
   .canon-grid,
-  .art-grid {
+  .art-grid,
+  .sword-module-grid {
     grid-template-columns: 1fr;
   }
 
