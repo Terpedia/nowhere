@@ -370,12 +370,8 @@ li {
 .manuscript-copy { max-width: 48rem; margin-right: auto; }
 .manuscript-copy p { font-size: 1.08rem; line-height: 1.75; }
 .manuscript-copy p:first-of-type:first-letter { float: left; padding: 0.08rem 0.35rem 0 0; color: var(--gold); font-family: "Cinzel", serif; font-size: 4rem; line-height: 0.82; }
-.placeholder-folio { position: relative; overflow: hidden; border-style: dashed; background: linear-gradient(135deg, rgba(213, 163, 93, 0.06), rgba(18, 12, 10, 0.84)); }
-.placeholder-folio::after { content: "WORKING DRAFT"; position: absolute; right: 1.5rem; top: 1.4rem; color: rgba(213, 163, 93, 0.36); font-family: "Cinzel", serif; font-size: 0.7rem; letter-spacing: 0.14em; transform: rotate(8deg); }
 .completed-folio { position: relative; overflow: hidden; border-color: rgba(98, 180, 118, 0.32); background: linear-gradient(135deg, rgba(98, 180, 118, 0.06), rgba(18, 12, 10, 0.84)); }
 .completed-folio::after { content: "FOLIO COMPLETE"; position: absolute; right: 1.5rem; top: 1.4rem; color: rgba(98, 180, 118, 0.45); font-family: "Cinzel", serif; font-size: 0.7rem; letter-spacing: 0.14em; transform: rotate(8deg); }
-.placeholder-folio h2 { max-width: 22ch; }
-.placeholder-note { max-width: 42rem; margin-top: 1.1rem; color: var(--gold-soft); font-style: italic; }
 .placeholder-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.4rem 1.5rem; margin: 1.2rem 0 0; padding-left: 1.2rem; }
 .chapter-ribbon { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem; color: var(--gold-soft); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; }
 .chapter-ribbon::after { content: ""; height: 1px; flex: 1; background: rgba(213, 163, 93, 0.22); }
@@ -392,9 +388,6 @@ li {
 .chapter-side h3 { margin-bottom: 0.5rem; }
 .evidence-box { border-left: 3px solid rgba(98, 180, 118, 0.5); background: rgba(98, 180, 118, 0.07); }
 .interpretation-box { border-left: 3px solid rgba(174, 91, 151, 0.5); background: rgba(174, 91, 151, 0.07); }
-.plate-placeholder { min-height: 14rem; display: flex; flex-direction: column; justify-content: flex-end; background: linear-gradient(155deg, rgba(213, 163, 93, 0.08), rgba(20, 15, 12, 0.95)); border-style: dashed; }
-.plate-placeholder .plate-mark { color: rgba(213, 163, 93, 0.48); font-family: "Cinzel", serif; font-size: 2.2rem; letter-spacing: 0.12em; }
-.plate-placeholder figcaption { margin-top: 1rem; }
 .chapter-sources { grid-column: 1 / -1; }
 .chapter-sources ul { margin: 0; padding-left: 1.2rem; }
 .chapter-sources li { margin: 0.55rem 0; }
