@@ -51,6 +51,25 @@ async function renderRecipePage() {
       )
       .join("");
 
+    const formulaCard = recipe.formulaCard || {};
+    const listHtml = (items = []) => items.map((item) => `<li>${item}</li>`).join("");
+    const formulaCardHtml = `
+      <article class="panel recipe-formula-card">
+        <p class="section-label">Pilot formula card</p>
+        <h2>Measure what is known</h2>
+        <p class="callout">${formulaCard.status || "Development record"}</p>
+        <div class="recipe-ledger">
+          <div class="ledger-row"><div><div class="ledger-name">Reporting unit</div><div>Use this unit for the batch ledger; do not infer grams from sensory adjectives.</div></div><div class="ledger-value">${formulaCard.unit || "Record measured units"}</div></div>
+        </div>
+        <div class="book-two-column recipe-card-columns">
+          <div><h3>Required records</h3><ul>${listHtml(formulaCard.requiredRecords)}</ul></div>
+          <div><h3>Acceptance gates</h3><ul>${listHtml(formulaCard.acceptanceGates)}</ul></div>
+        </div>
+        <h3>Open variables</h3>
+        <ul>${listHtml(formulaCard.openVariables)}</ul>
+      </article>
+    `;
+
     const herbHtml = recipe.herbs
       .map(([slug, note]) => {
         const herb = herbs[slug];
@@ -113,6 +132,7 @@ async function renderRecipePage() {
       <main class="page-content shell">
         <section class="stack">
           ${recipeSectionsHtml}
+          ${formulaCardHtml}
           <article class="panel">
             <p class="section-label">Herbs</p>
             <h2>Botanical frame</h2>

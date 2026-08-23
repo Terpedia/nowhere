@@ -97,6 +97,27 @@
         ]
       }
     ],
+    "formulaCard": {
+      "status": "Pilot specification; batch actuals required before production",
+      "unit": "Record every botanical as grams per litre of finished spirit",
+      "requiredRecords": [
+        "Botanical mass, plant part, supplier or garden lot, and moisture state",
+        "Maceration or distillation time, temperature, charge volume, and recovered distillate",
+        "Final measured ABV, proofing water source, water hardness, and final volume",
+        "Coloration time, filtration method, rest time, and louche photographs at fixed dilution"
+      ],
+      "acceptanceGates": [
+        "Classic bitter-green spine with anise and fennel in balance",
+        "Visible, repeatable louche at the house serve ratio",
+        "Green coloration remains aromatic and fresh rather than cooked or muddy",
+        "No marketing or sensory claim is upgraded until the actuals and sensory sheet agree"
+      ],
+      "openVariables": [
+        "Exact botanical weights",
+        "Distillate oil concentration and proof",
+        "Coloration duration and final water source"
+      ]
+    },
     "herbs": [
       [
         "wormwood",
@@ -285,6 +306,27 @@
         ]
       }
     ],
+    "formulaCard": {
+      "status": "Pilot specification; batch actuals required before production",
+      "unit": "Record every botanical as grams per litre of finished spirit",
+      "requiredRecords": [
+        "Botanical mass, plant part, supplier or garden lot, and moisture state",
+        "Maceration or distillation time, temperature, charge volume, and recovered distillate",
+        "Final measured ABV, proofing water source, water hardness, and final volume",
+        "Coloration time, filtration method, rest time, and louche photographs at fixed dilution"
+      ],
+      "acceptanceGates": [
+        "Crimson color reads floral and tart without burying the absinthe spine",
+        "Visible, repeatable louche at the house serve ratio",
+        "Hibiscus, rosehip, and spice remain distinct after dilution",
+        "No marketing or sensory claim is upgraded until the actuals and sensory sheet agree"
+      ],
+      "openVariables": [
+        "Exact botanical weights",
+        "Colorant and acid contribution",
+        "Distillate proof, filtration, and final water source"
+      ]
+    },
     "herbs": [
       [
         "wormwood",
@@ -511,6 +553,27 @@
         ]
       }
     ],
+    "formulaCard": {
+      "status": "Pilot specification; batch actuals required before production",
+      "unit": "Record every botanical as grams per litre of finished spirit",
+      "requiredRecords": [
+        "Botanical mass, plant part, supplier or garden lot, and moisture state",
+        "Maceration or distillation time, temperature, charge volume, and recovered distillate",
+        "Final measured ABV, proofing water source, water hardness, and final volume",
+        "Coloration time, filtration method, rest time, and louche photographs at fixed dilution"
+      ],
+      "acceptanceGates": [
+        "Yellow-green citrus route stays dry, adult, and recognizably absinthe",
+        "Visible, repeatable louche at the house serve ratio",
+        "Lemon balm and citrus remain bright without a muddy herbal finish",
+        "No marketing or sensory claim is upgraded until the actuals and sensory sheet agree"
+      ],
+      "openVariables": [
+        "Exact botanical weights",
+        "Citrus peel load and coloration method",
+        "Distillate proof, water hardness, and final dilution"
+      ]
+    },
     "herbs": [
       [
         "wormwood",
@@ -709,6 +772,27 @@
         ]
       }
     ],
+    "formulaCard": {
+      "status": "Pilot specification; batch actuals required before production",
+      "unit": "Record every botanical as grams per litre of finished spirit",
+      "requiredRecords": [
+        "Botanical mass, plant part, supplier or garden lot, and moisture state",
+        "Maceration or distillation time, temperature, charge volume, and recovered distillate",
+        "Final measured ABV, proofing water source, water hardness, and final volume",
+        "Coloration time, filtration method, rest time, and louche photographs at fixed dilution"
+      ],
+      "acceptanceGates": [
+        "Spirit remains visibly clear before dilution with no coloring-herb finish",
+        "Louche is visible and repeatable at the colder house serve ratio",
+        "Anise and fennel read as dry aromatic structure, not a sweet licorice overload",
+        "No marketing or sensory claim is upgraded until the actuals and sensory sheet agree"
+      ],
+      "openVariables": [
+        "Exact botanical weights",
+        "Oil concentration after distillation",
+        "Cold-water temperature, hardness, and final proof"
+      ]
+    },
     "herbs": [
       [
         "wormwood",
