@@ -370,8 +370,7 @@ li {
 .manuscript-copy { max-width: 48rem; margin-right: auto; }
 .manuscript-copy p { font-size: 1.08rem; line-height: 1.75; }
 .manuscript-copy p:first-of-type:first-letter { float: left; padding: 0.08rem 0.35rem 0 0; color: var(--gold); font-family: "Cinzel", serif; font-size: 4rem; line-height: 0.82; }
-.completed-folio { position: relative; overflow: hidden; border-color: rgba(98, 180, 118, 0.32); background: linear-gradient(135deg, rgba(98, 180, 118, 0.06), rgba(18, 12, 10, 0.84)); }
-.completed-folio::after { content: "FOLIO COMPLETE"; position: absolute; right: 1.5rem; top: 1.4rem; color: rgba(98, 180, 118, 0.45); font-family: "Cinzel", serif; font-size: 0.7rem; letter-spacing: 0.14em; transform: rotate(8deg); }
+.folio-spread { position: relative; overflow: hidden; border-color: rgba(98, 180, 118, 0.32); background: linear-gradient(135deg, rgba(98, 180, 118, 0.06), rgba(18, 12, 10, 0.84)); }
 .placeholder-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.4rem 1.5rem; margin: 1.2rem 0 0; padding-left: 1.2rem; }
 .chapter-ribbon { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem; color: var(--gold-soft); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; }
 .chapter-ribbon::after { content: ""; height: 1px; flex: 1; background: rgba(213, 163, 93, 0.22); }
