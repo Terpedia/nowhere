@@ -498,6 +498,13 @@ blockquote {
     var(--panel);
 }
 
+.psycho-open-question {
+  border-color: rgba(102, 172, 124, 0.38);
+  background:
+    radial-gradient(circle at top right, rgba(66, 128, 81, 0.25), transparent 38%),
+    linear-gradient(180deg, rgba(20, 39, 25, 0.94), rgba(11, 8, 6, 0.96));
+}
+
 .psycho-table-wrap {
   overflow-x: auto;
   margin: 1rem -0.35rem -0.35rem;
