@@ -377,10 +377,32 @@ li {
 .placeholder-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.4rem 1.5rem; margin: 1.2rem 0 0; padding-left: 1.2rem; }
 .chapter-ribbon { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem; color: var(--gold-soft); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; }
 .chapter-ribbon::after { content: ""; height: 1px; flex: 1; background: rgba(213, 163, 93, 0.22); }
+.book-chapter { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(16rem, 0.85fr); gap: 1.25rem; }
+.book-chapter > .panel { min-width: 0; }
+.chapter-title { grid-column: 1 / -1; min-height: 22rem; display: flex; flex-direction: column; justify-content: center; background: radial-gradient(circle at 80% 20%, rgba(213, 163, 93, 0.16), transparent 32%), linear-gradient(135deg, rgba(24, 70, 54, 0.92), rgba(13, 9, 8, 0.98)); }
+.chapter-title h1 { max-width: 12ch; margin: 0.8rem 0; font-size: clamp(2.8rem, 7vw, 6rem); }
+.chapter-dek { max-width: 48rem; color: #f1d6a7; font-family: "Cormorant Garamond", serif; font-size: clamp(1.35rem, 2.6vw, 2rem); line-height: 1.25; }
+.chapter-main { grid-column: 1; }
+.chapter-side { grid-column: 2; align-self: start; }
+.chapter-main p, .chapter-side p { line-height: 1.7; }
+.chapter-main p { font-size: 1.08rem; }
+.chapter-main h2 { margin-top: 1.8rem; }
+.chapter-side h3 { margin-bottom: 0.5rem; }
+.evidence-box { border-left: 3px solid rgba(98, 180, 118, 0.5); background: rgba(98, 180, 118, 0.07); }
+.interpretation-box { border-left: 3px solid rgba(174, 91, 151, 0.5); background: rgba(174, 91, 151, 0.07); }
+.plate-placeholder { min-height: 14rem; display: flex; flex-direction: column; justify-content: flex-end; background: linear-gradient(155deg, rgba(213, 163, 93, 0.08), rgba(20, 15, 12, 0.95)); border-style: dashed; }
+.plate-placeholder .plate-mark { color: rgba(213, 163, 93, 0.48); font-family: "Cinzel", serif; font-size: 2.2rem; letter-spacing: 0.12em; }
+.plate-placeholder figcaption { margin-top: 1rem; }
+.chapter-sources { grid-column: 1 / -1; }
+.chapter-sources ul { margin: 0; padding-left: 1.2rem; }
+.chapter-sources li { margin: 0.55rem 0; }
+.chapter-nav { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
 
 @media (max-width: 720px) {
   .book-potion-grid, .book-two-column, .reading-grid { grid-template-columns: 1fr; }
   .placeholder-list { grid-template-columns: 1fr; }
+  .book-chapter { grid-template-columns: 1fr; }
+  .chapter-main, .chapter-side { grid-column: 1; }
 }
 
 .text-link {
