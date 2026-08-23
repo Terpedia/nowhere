@@ -1,0 +1,52 @@
+@page {
+  size: 12in 12in;
+  margin: 0.62in 0.68in 0.72in;
+  @bottom-center {
+    content: "NOWHERE'S END  ·  " counter(page);
+    color: #78614f;
+    font: 8pt "DejaVu Sans", sans-serif;
+    letter-spacing: 0.12em;
+  }
+}
+
+* { box-sizing: border-box; }
+html, body { background: #f3ead8 !important; color: #2d211d !important; }
+body { font-family: "Cormorant Garamond", Georgia, serif; font-size: 13.5pt; line-height: 1.42; }
+.page-glow, .back-link, .book-links, .chip, .source-note, .chapter-nav { display: none !important; }
+.shell { max-width: none !important; width: auto !important; margin: 0 !important; padding: 0 !important; }
+.page-header { padding: 0 !important; }
+.page-title-wrap { border: 0 !important; box-shadow: none !important; background: transparent !important; padding: 0 0 0.28in !important; }
+.page-title h1, .manuscript-title h1, h1, h2, h3 { color: #214a3b !important; }
+.page-title h1 { font-size: 34pt !important; }
+.page-intro, .chapter-dek, .lede, .book-quote, .subtitle, .callout { color: #574438 !important; }
+.page-content { display: block !important; }
+.panel { background: rgba(255, 252, 244, 0.76) !important; border: 0.6pt solid #c9b28c !important; box-shadow: none !important; border-radius: 0 !important; margin: 0 0 0.24in !important; padding: 0.26in !important; break-inside: auto; }
+.manuscript-title { min-height: 4.2in; display: flex; flex-direction: column; justify-content: center; text-align: center; border: 1.4pt solid #a78350 !important; }
+.book-frontispiece { text-align: center; break-after: page; }
+.book-frontispiece img { max-height: 8.9in !important; width: auto !important; max-width: 100% !important; }
+.hero-image { text-align: center; }
+.hero-image img { max-width: 100% !important; max-height: 8.7in !important; width: auto !important; object-fit: contain; }
+figcaption { color: #574438 !important; font-size: 10.5pt !important; line-height: 1.25 !important; margin-top: 0.12in; }
+.book-opening { break-before: page; }
+.book-manuscript > section:nth-of-type(6),
+.book-manuscript > section:nth-of-type(8),
+.book-manuscript > section:nth-of-type(10),
+.book-manuscript > section:nth-of-type(12),
+.book-manuscript > section:nth-of-type(14),
+.book-manuscript > section:nth-of-type(16) { break-before: page; }
+.book-two-column, .reading-grid, .book-potion-grid { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 0.18in !important; }
+.reading-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+.book-parts { display: block !important; }
+.book-part { margin: 0 0 0.12in; }
+.manuscript-copy { max-width: none !important; }
+body.book-page .manuscript-copy p { color: #574438 !important; font-size: 14pt !important; line-height: 1.48 !important; }
+.manuscript-copy .book-quote { color: #574438 !important; }
+.manuscript-copy p:first-of-type:first-letter { color: #a06c37 !important; }
+.chapter-ribbon { color: #8a6135 !important; }
+.placeholder-list { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.06in 0.18in; }
+a { color: #285d4b !important; text-decoration: none !important; }
+.folio-label, .section-label, .eyebrow { color: #8a6135 !important; }
+.manuscript-title .book-quote, .manuscript-title .subtitle { color: #8a6135 !important; }
+ul, ol { padding-left: 0.25in; }
+figure { break-inside: avoid; }
+@media print { .panel { overflow: visible !important; } }
