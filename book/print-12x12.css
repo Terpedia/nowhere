@@ -20,6 +20,15 @@ body { font-family: "Cormorant Garamond", Georgia, serif; font-size: 13.5pt; lin
 .page-title h1 { font-size: 34pt !important; }
 .page-intro, .chapter-dek, .lede, .book-quote, .subtitle, .callout { color: #574438 !important; }
 .page-content { display: block !important; }
+.room { break-before: page; }
+.room > h1 { color: #214a3b !important; font-size: 30pt; margin: 0.1in 0 0.3in; }
+.room > .book-layout, .room > .page-content { display: block !important; }
+.expanded-room > section, .expanded-room > article { break-inside: auto; }
+.room p, .room li, .room td, .room th { color: #574438 !important; }
+.room h2, .room h3 { color: #214a3b !important; }
+.room .reading-grid > div, .room .book-part > div { color: #574438 !important; }
+.room .reading-grid span, .room .book-part > span { color: #8a6135 !important; }
+.room .pathway-node, .room .pathway-node strong, .room .pathway-node span, .room .pathway-node small { color: #574438 !important; }
 .panel { background: rgba(255, 252, 244, 0.76) !important; border: 0.6pt solid #c9b28c !important; box-shadow: none !important; border-radius: 0 !important; margin: 0 0 0.24in !important; padding: 0.26in !important; break-inside: auto; }
 .manuscript-title { min-height: 4.2in; display: flex; flex-direction: column; justify-content: center; text-align: center; border: 1.4pt solid #a78350 !important; }
 .book-frontispiece { text-align: center; break-after: page; }
@@ -28,6 +37,9 @@ body { font-family: "Cormorant Garamond", Georgia, serif; font-size: 13.5pt; lin
 .hero-image img { max-width: 100% !important; max-height: 8.7in !important; width: auto !important; object-fit: contain; }
 figcaption { color: #574438 !important; font-size: 10.5pt !important; line-height: 1.25 !important; margin-top: 0.12in; }
 .book-opening { break-before: page; }
+.book-manuscript > .panel:not(:first-child) { break-before: page; }
+.book-manuscript > .panel > figure { break-before: page; break-after: page; }
+.book-manuscript > .folio-spread .manuscript-copy h2 { break-before: page; }
 .book-manuscript > section:nth-of-type(6),
 .book-manuscript > section:nth-of-type(8),
 .book-manuscript > section:nth-of-type(10),
