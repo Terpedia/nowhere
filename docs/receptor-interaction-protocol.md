@@ -45,9 +45,11 @@ For the complete human panel, use the structure parquet directly:
 python3 scripts/join_sair_parquet.py \
   --structures data/terpedia-resolved-structure-records.csv \
   --panel data/human-neural-receptor-panel.csv \
-  --parquet /path/to/sair.parquet \
+  --parquet https://storage.googleapis.com/storage/v1/b/sandboxaq-sair/o/sair.parquet?alt=media \
   --output /tmp/sair-19-target-join.csv
 ```
+
+For the authenticated GCP object, export a short-lived access token as `TERPEDIA_ACCESS_TOKEN`; the script uses it only to configure DuckDB's HTTP range reader and does not write it to the output.
 
 The script forms the complete compound-by-panel cross-product while preserving each exact SMILES. It emits one row per compound-target pair and distinguishes exact isomeric matches, connectivity-only matches, and no join. It does not classify assay semantics; matched parquet rows must still be reviewed using `assay`, `potency`, `pIC50`, docking, and model-quality fields.
 

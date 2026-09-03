@@ -1,0 +1,20 @@
+target,terpedia_record,sair_protein_id,organism,source_url
+HTR1A,protein:CDBP01994,P08908,Homo sapiens,https://rest.uniprot.org/uniprotkb/P08908.txt
+HTR2A,protein:CDBP02043,P28223,Homo sapiens,https://rest.uniprot.org/uniprotkb/P28223.txt
+HTR2C,protein:CDBP02060,P28335,Homo sapiens,https://rest.uniprot.org/uniprotkb/P28335.txt
+HTR3A,protein:CDBP02156,P46098,Homo sapiens,https://rest.uniprot.org/uniprotkb/P46098.txt
+HTR7,protein:CDBP01867,P34969,Homo sapiens,https://rest.uniprot.org/uniprotkb/P34969.txt
+GABRA1,protein:CDBP03412,P14867,Homo sapiens,https://rest.uniprot.org/uniprotkb/P14867.txt
+GABRA2,protein:CDBP03413,P47869,Homo sapiens,https://rest.uniprot.org/uniprotkb/P47869.txt
+GABRB2,protein:CDBP03419,P47870,Homo sapiens,https://rest.uniprot.org/uniprotkb/P47870.txt
+GABRG2,protein:CDBP01864,P18507,Homo sapiens,https://rest.uniprot.org/uniprotkb/P18507.txt
+DRD1,protein:CDBP04812,P21728,Homo sapiens,https://rest.uniprot.org/uniprotkb/P21728.txt
+DRD2,protein:CDBP01576,P14416,Homo sapiens,https://rest.uniprot.org/uniprotkb/P14416.txt
+CHRM2,protein:CDBP04814,P08172,Homo sapiens,https://rest.uniprot.org/uniprotkb/P08172.txt
+OPRM1,protein:CDBP02036,P35372,Homo sapiens,https://rest.uniprot.org/uniprotkb/P35372.txt
+CNR1,protein:CDBP04807,P21554,Homo sapiens,https://rest.uniprot.org/uniprotkb/P21554.txt
+TRPA1,protein:CDBP04867,O75762,Homo sapiens,https://rest.uniprot.org/uniprotkb/O75762.txt
+TRPM8,protein:CDBP01847,Q7Z2W7,Homo sapiens,https://rest.uniprot.org/uniprotkb/Q7Z2W7.txt
+TRPV1,protein:CDBP01848,Q8NER1,Homo sapiens,https://rest.uniprot.org/uniprotkb/Q8NER1.txt
+GRIN1,protein:CDBP01515,Q05586,Homo sapiens,https://rest.uniprot.org/uniprotkb/Q05586.txt
+SLC6A4,protein:CDBP01822,P31645,Homo sapiens,https://rest.uniprot.org/uniprotkb/P31645.txt

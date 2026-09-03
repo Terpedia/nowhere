@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import os
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -31,7 +32,7 @@ def canonical(smiles: str, isomeric: bool) -> str | None:
     return Chem.MolToSmiles(molecule, isomericSmiles=isomeric)
 
 
-def read_targets(structures_path: Path, panel_path: Path) -> tuple[dict[str, dict[str, str]], set[str]]:
+def read_targets(structures_path: Path, panel_path: Path, crosswalk_path: Path) -> tuple[dict[str, dict[str, str]], set[str]]:
     structures: list[dict[str, str]] = []
     with structures_path.open(newline="") as handle:
         for row in csv.DictReader(handle):
@@ -45,17 +46,24 @@ def read_targets(structures_path: Path, panel_path: Path) -> tuple[dict[str, dic
                     "nonisomeric": canonical(smiles, False) or "",
                 })
 
+    crosswalk = {}
+    with crosswalk_path.open(newline="") as handle:
+        for row in csv.DictReader(handle):
+            crosswalk[row["target"].strip()] = row["sair_protein_id"].strip()
+
     targets: dict[str, dict[str, str]] = {}
     proteins: set[str] = set()
     with panel_path.open(newline="") as handle:
         for row in csv.DictReader(handle):
             protein = row.get("terpedia_record", row.get("receptor_record_id", "")).strip()
-            if not protein:
+            target = row.get("target", "").strip()
+            sair_protein = crosswalk.get(target)
+            if not protein or not sair_protein:
                 continue
-            proteins.add(protein)
+            proteins.add(sair_protein)
             for structure in structures:
-                target_key = protein + "\t" + structure["compound"] + "\t" + structure["smiles"]
-                targets[target_key] = {"protein": protein, **structure}
+                target_key = sair_protein + "\t" + structure["compound"] + "\t" + structure["smiles"]
+                targets[target_key] = {"protein": sair_protein, "receptor_record_id": protein, "target": target, **structure}
     return targets, proteins
 
 
@@ -63,21 +71,36 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--structures", type=Path, required=True)
     parser.add_argument("--panel", type=Path, required=True)
-    parser.add_argument("--parquet", type=Path, required=True)
+    parser.add_argument("--crosswalk", type=Path, default=Path(__file__).parents[1] / "data" / "sair-protein-crosswalk.csv")
+    # Keep this as a string: pathlib.Path collapses https:// into https:/.
+    parser.add_argument("--parquet", required=True)
+    parser.add_argument("--access-token-env", default="TERPEDIA_ACCESS_TOKEN")
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
     if duckdb is None or Chem is None:
         raise SystemExit("join_sair_parquet.py requires duckdb and rdkit")
 
-    targets, proteins = read_targets(args.structures, args.panel)
+    targets, proteins = read_targets(args.structures, args.panel, args.crosswalk)
     if not targets:
         raise SystemExit("no usable target structures found")
 
     connection = duckdb.connect()
     try:
+        parquet_source = str(args.parquet)
+        if parquet_source.startswith(("http://", "https://")):
+            token = os.environ.get(args.access_token_env)
+            if not token:
+                raise SystemExit(f"{args.access_token_env} is required for an HTTP parquet source")
+            quote = chr(39)
+            connection.execute(
+                "CREATE SECRET sair_auth (TYPE http, EXTRA_HTTP_HEADERS MAP {"
+                + quote + "Authorization" + quote + ": "
+                + quote + "Bearer " + token + quote + "})"
+            )
+        parquet_sql = repr(parquet_source)
         columns = connection.execute(
-            "DESCRIBE SELECT * FROM read_parquet(?)", [str(args.parquet)]
+            "DESCRIBE SELECT * FROM read_parquet(" + parquet_sql + ")"
         ).fetchall()
         names = {row[0] for row in columns}
         required = {"protein", "SMILES"}
@@ -87,10 +110,10 @@ def main() -> int:
 
         placeholders = ",".join("?" for _ in proteins)
         query = (
-            "SELECT protein, SMILES FROM read_parquet(?) "
+            "SELECT protein, SMILES FROM read_parquet(" + parquet_sql + ") "
             f"WHERE protein IN ({placeholders}) AND SMILES IS NOT NULL"
         )
-        rows = connection.execute(query, [str(args.parquet), *sorted(proteins)]).fetchall()
+        rows = connection.execute(query, sorted(proteins)).fetchall()
     finally:
         connection.close()
 
@@ -115,7 +138,7 @@ def main() -> int:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", newline="") as handle:
         fields = [
-            "compound", "receptor_record_id", "target_smiles",
+            "compound", "target", "receptor_record_id", "sair_protein_id", "target_smiles",
             "compatible_sair_rows", "isomeric_match_rows",
             "nonisomeric_match_rows", "join_status",
         ]
@@ -129,7 +152,9 @@ def main() -> int:
             )
             writer.writerow({
                 "compound": target["compound"],
-                "receptor_record_id": target["protein"],
+                "target": target["target"],
+                "receptor_record_id": target["receptor_record_id"],
+                "sair_protein_id": target["protein"],
                 "target_smiles": target["smiles"],
                 "compatible_sair_rows": candidate_rows[target["protein"]],
                 "isomeric_match_rows": iso_count,

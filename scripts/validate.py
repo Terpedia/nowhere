@@ -22,6 +22,8 @@ expanded_panel = read("human-neural-receptor-panel.csv")
 resolved_structures = read("terpedia-resolved-structure-records.csv")
 identity_audit = read("terpedia-identity-audit.csv")
 expanded_join = read("sair-expanded-join-summary.csv")
+crosswalk = read("sair-protein-crosswalk.csv")
+full_panel_join = read("sair-19-target-parquet-join.csv")
 
 assert len(compounds) >= 20, "compound inventory unexpectedly short"
 assert len({row["compound"] for row in compounds}) == len(compounds), "duplicate compound"
@@ -53,4 +55,12 @@ assert any(row["identity_status"] == "no Terpedia structure match" for row in id
 assert len(expanded_join) == 27
 assert all(row["join_status"] == "no_match" for row in expanded_join)
 assert all(row["interaction_rows_scanned"] == "1489" for row in expanded_join)
+assert len(crosswalk) == len(expanded_panel)
+assert {row["target"] for row in crosswalk} == {row["target"] for row in expanded_panel}
+assert all(row["sair_protein_id"] and row["organism"] == "Homo sapiens" for row in crosswalk)
+assert len(full_panel_join) == 646
+assert len({row["compound"] for row in full_panel_join}) == 27
+assert len({row["target"] for row in full_panel_join}) == 19
+assert all(row["join_status"] == "no_match" for row in full_panel_join)
+assert all(row["sair_protein_id"] for row in full_panel_join)
 print(f"validated {len(compounds)} compounds, {len(framework)} framework criteria, {len(identifiers)} identifiers, {len(panel)} primary and {len(expanded_panel)} expanded receptor targets, and {len(interactome)} interaction edges")
