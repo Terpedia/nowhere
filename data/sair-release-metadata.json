@@ -5,6 +5,7 @@
   "retrieved_at": "2026-09-03",
   "retrieval_method": "gcloud storage cp followed by DuckDB read_parquet",
   "row_count": 8803710,
+  "supernatural2_export": {"object_uri": "gs://terpedia-knowledge-raw/raw/terport-data/objects/4d9e840a8a95f1f6c82a94b7d018b3492227c85257c42efd75330e7a408df0fb/supernatural2/full_data_download.csv", "size_bytes": 470716938, "crc32c": "Kam0jg==", "rows": 1205199, "delimiter": ";", "retrieval_role": "authoritative Terpedia structure source"},
   "structure_join_status": "canonical and non-isomeric canonical joins tested; no matches",
   "tested_smiles": ["CC(C)C12CC1C(C)C(=O)C2", "COc1ccc(/C=C/C)cc1", "CC1(C)[C@H]2CC[C@](C)(C2)C1=O", "CC(C)=CCC[C@@](C)(O)C=C"],
   "canonical_join": {"targets_tested": 7, "prefilter_candidate_rows": 18145, "isomeric_matches": 0, "nonisomeric_matches": 0, "normalizer": "RDKit MolFromSmiles then MolToSmiles(canonical=True), with and without isomericSmiles"},

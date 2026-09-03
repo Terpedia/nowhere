@@ -1,0 +1,7 @@
+# Absinthe identity resolution
+
+The local inventory contains 29 reported constituents. Identity resolution uses the full Terpedia SuperNatural II export as the authoritative structure source. The export was retrieved from the content-addressed GCS object recorded in `data/terpedia-resolved-structure-records.csv`; it contains 1,205,199 semicolon-delimited records.
+
+For common-name lookup, a supplemental structure candidate was obtained for each inventory name. Candidates were used only as search aids. A candidate was accepted as Terpedia-grounded only when its InChIKey connectivity block or exact stereochemical InChIKey matched a Terpedia source row. Terpedia source labels were not overwritten when they disagreed with the common name. If a common name did not specify stereochemistry, all relevant Terpedia stereoisomer candidates remain eligible rather than being collapsed.
+
+The resulting audit is `data/terpedia-identity-audit.csv`. Exact structure records selected for downstream joins are in `data/terpedia-resolved-structure-records.csv`. A status of `stereoisomer family matched` or `structure matched label discrepancy` is not equivalent to a uniquely resolved finished-beverage molecule; it identifies a set of structurally plausible Terpedia records requiring sample-specific adjudication.

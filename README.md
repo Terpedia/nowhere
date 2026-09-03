@@ -20,6 +20,7 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 - `data/sair-canonical-join-results.csv` — seven-target canonical and non-isomeric join results, including the 18,145-row compatible-candidate scan.
 - `data/terpedia-resolved-structure-records.csv` — exact structure records recovered from the full Terpedia SuperNatural II export; unresolved inventory names remain separate.
 - `data/terpedia-identity-audit.csv` — full 29-compound identity audit, including source-label discrepancies and unresolved stereochemistry.
+- `docs/identity-resolution.md` — identity-resolution rules and the boundary between supplemental lookup and Terpedia adjudication.
 - `manuscript/receptor-interactome-report.md` — network visualization, interpretation, and limitations.
 - `scripts/validate.py` — lightweight integrity checks for the data tables.
 - `scripts/join_sair_interactions.py` — reproducible RDKit canonical-structure join against the Terpedia SAIR interaction CSV.
