@@ -39,6 +39,18 @@ python3 scripts/join_sair_interactions.py \
 
 The source projection contains protein IDs and interaction counts, but not assay semantics. Assay type, potency, and docking/model fields must therefore be obtained from the corresponding SAIR structure parquet before classifying a matched edge.
 
+For the complete human panel, use the structure parquet directly:
+
+```bash
+python3 scripts/join_sair_parquet.py \
+  --structures data/terpedia-resolved-structure-records.csv \
+  --panel data/human-neural-receptor-panel.csv \
+  --parquet /path/to/sair.parquet \
+  --output /tmp/sair-19-target-join.csv
+```
+
+The script forms the complete compound-by-panel cross-product while preserving each exact SMILES. It emits one row per compound-target pair and distinguishes exact isomeric matches, connectivity-only matches, and no join. It does not classify assay semantics; matched parquet rows must still be reviewed using `assay`, `potency`, `pIC50`, docking, and model-quality fields.
+
 ## Minimum evidence table
 
 | Field | Why it is required |

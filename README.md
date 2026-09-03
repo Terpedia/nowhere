@@ -25,6 +25,7 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 - `manuscript/receptor-interactome-report.md` — network visualization, interpretation, and limitations.
 - `scripts/validate.py` — lightweight integrity checks for the data tables.
 - `scripts/join_sair_interactions.py` — reproducible RDKit canonical-structure join against the Terpedia SAIR interaction CSV.
+- `scripts/join_sair_parquet.py` — reproducible DuckDB/RDKit compound-by-panel join against the full SAIR structure parquet.
 
 ## Terpedia source artifacts
 
