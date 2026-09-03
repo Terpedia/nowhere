@@ -1,12 +1,12 @@
 # Terpedia KB connection
 
-The paper's authoritative knowledge source is the Terpedia KB running on GCP/GCE. The endpoint below is taken from Terpedia's API proxy configuration (`../api.terpedia.com/api/v1/chat/completions.ts`):
+The paper's authoritative knowledge source is the Terpedia KB running in GCP project `terpedia-489015`. The current public API is:
 
 ```text
-http://104.197.255.123:8010
+https://terpedia-knowledge-nanrsdlaoa-uc.a.run.app
 ```
 
-The helper in `scripts/query_kb.py` accepts `TERPEDIA_KB_URL` to override it. The older KB documentation also describes entity search on port 8001 and Fuseki on port 3030; those ports were not reachable from the current session. On 2026-09-03, the public HTTPS hostname served a static KB page and returned 404 for the documented search/health routes, while the GCE address timed out. Do not interpret an unreachable endpoint as absence of a molecule or target in the KB. The result is recorded in `data/terpedia-kb-retrieval-2026-09-03.json`.
+The helper in `scripts/query_kb.py` accepts `TERPEDIA_KB_URL` and `TERPEDIA_KB_KEY` from the environment. The key must be retrieved at runtime from Secret Manager as described in `../kb-source/docs/TERPEDIA_DATA_REFERENCE.md`; it is never committed. A successful authenticated refresh for four absinthe-relevant terms is recorded in `data/gcp-kb-refresh-2026-09-03.json`.
 
 ## Refresh pattern
 

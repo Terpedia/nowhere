@@ -32,7 +32,7 @@ Psilocybin illustrates the standard. In a controlled human PET study, oral psilo
 
 ### 3.1 Sources and entity handling
 
-The primary project source is the Terpedia KB, documented as a GCP/GCE-backed biochemical system with ChEBI, PubChem, Rhea, natural-product, essential-oil, and literature datasets. The active GCP entity-search endpoint was recorded as `http://104.197.255.123:8010`. A read-only query for thujone timed out during this run; this is recorded as an infrastructure failure and not interpreted as a negative database result. The local Terpedia source artifacts were used to establish the starting inventory: `functional-flavors/absinthe.html` and `functional-flavors/absinthe-coa.html`. Psychedelic comparator literature was located in Terpedia's Paperpile export and checked against primary or review articles.
+The primary project source is the Terpedia KB, documented as a GCP-backed biochemical system with ChEBI, PubChem, Rhea, natural-product, essential-oil, and literature datasets. The current Cloud Run API in project `terpedia-489015` was queried on 2026-09-03 using the documented Secret Manager key and tabular-search route. Searches in the `supernatural2` projection resolved stereochemical records for thujone, anethole, fenchone, and linalool; the returned release, ingestion run, manifest URI, source object, and SHA-256 are preserved in `data/gcp-kb-refresh-2026-09-03.json`. The local Terpedia source artifacts were used to establish the starting inventory: `functional-flavors/absinthe.html` and `functional-flavors/absinthe-coa.html`. Psychedelic comparator literature was located in Terpedia's Paperpile export and checked against primary or review articles.
 
 Chemical records were kept separate when the source distinguishes stereoisomers or geometric isomers. The inventory also separates volatile COA observations from absinthin, artabsin, and rosmarinic acid, which the Terpedia profile lists but which are not represented in the volatile COA table.
 
@@ -70,6 +70,8 @@ Ethanol is not a minor confounder: it is the beverage matrix and produces dose-d
 
 Historical reviews conclude that nineteenth-century “absinthism” mixed chronic alcohol misuse with reports of seizures, hallucinations, and mental deterioration, and that wormwood oil is far more convulsant than properly manufactured absinthe. Later chemical analyses also challenged exaggerated assumptions about historical thujone concentrations. These reviews do not prove that no absinthe preparation can alter perception. They do show why historical anecdotes cannot identify a receptor mechanism or quantify dose.
 
+One directly relevant human study did test absinthe-like drinks under matched alcohol conditions. Dettling and colleagues administered drinks containing identical alcohol amounts but 0, 10, or 100 mg/L thujone to 25 healthy volunteers and measured attention and mood. The high-thujone condition impaired peripheral attention and temporarily counteracted alcohol's anxiolytic effect; the low-thujone condition did not show those effects. This supports a dose-dependent interaction between thujone and alcohol-related CNS effects, but the endpoints were attention and mood, not validated psychedelic phenomenology, and the study did not establish 5-HT2A involvement.
+
 The phrase “absinthe is psychedelic” compresses at least three distinct claims: that the drink is subjectively different from other spirits; that it can cause hallucination or perceptual alteration; and that it does so through a classic psychedelic mechanism. The first may be plausible because of ethanol dose, aroma, ritual, expectation, and minor constituents. The second remains preparation- and dose-dependent. The third is not established by the current evidence map.
 
 ## 7. Synthesis
@@ -80,7 +82,7 @@ The phrase “absinthe is psychedelic” compresses at least three distinct clai
 | The recorded preparation contains thujones | Observed in Terpedia artifact | Reported alpha + beta = 21.6 mg/L; raw analytical files unavailable |
 | Alpha-thujone can inhibit GABA-A receptor function | Directly characterized | Strong mechanism for excitation/convulsant toxicology |
 | Absinthe constituents activate 5-HT2A at human-relevant exposure | Unestablished | No complete compound-resolved receptor/exposure dataset located |
-| Absinthe produces a reproducible classic psychedelic state | Unestablished | No qualifying blinded, ethanol-matched human study identified in this first pass |
+| Absinthe produces a reproducible classic psychedelic state | Unestablished | A human matched-alcohol thujone study measured attention/mood, not psychedelic phenomenology |
 | Historical absinthism proves a psychedelic mechanism | Not supported | Historical symptom reports are non-specific and confounded |
 
 ### Conclusion
@@ -110,4 +112,4 @@ The smallest decisive experimental program is:
 7. Olsen RW. Absinthe and gamma-aminobutyric acid receptors. *PNAS*. 2000;97:4417–4418. https://pmc.ncbi.nlm.nih.gov/articles/PMC34311/
 8. Lachenmeier DW, et al. Absinthism: a fictitious 19th century syndrome with present impact. *Subst Abuse Treat Prev Policy*. 2006;1:14. https://pmc.ncbi.nlm.nih.gov/articles/PMC1475830/
 9. Pelkonen O, Abass K, Wiesner J. Thujone and thujone-containing herbal medicinal and botanical products: toxicological assessment. *Regul Toxicol Pharmacol*. 2013;65:100–107. https://pubmed.ncbi.nlm.nih.gov/23201408/
-
+10. Dettling A, et al. Absinthe: attention performance and mood under the influence of thujone. *J Stud Alcohol*. 2004;65:573–581. https://pubmed.ncbi.nlm.nih.gov/15536765/
