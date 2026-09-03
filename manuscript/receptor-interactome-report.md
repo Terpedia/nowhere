@@ -24,9 +24,8 @@ The network contains two materially different biological stories. Thujones have 
 
 ## Limitations
 
-SAIR name and exact-SMILES searches returned no rows for the tested absinthe compounds through the public tabular API, even though the broader Terpedia KB returned HTR2A and GABA receptor target records. The SAIR interaction projection is not exposed through the documented tabular source selector, and direct BigQuery querying requires a role not available to the current account. Therefore, the network is a transparent first release: it includes literature-supported edges and records the missing SAIR join rather than treating missing access or missing annotation as absence.
+SAIR name and exact-SMILES searches returned no rows for the tested absinthe compounds through the public tabular API, even though the broader Terpedia KB returned HTR2A and GABA receptor target records. A read-only copy of the underlying SandboxAQ `sair.parquet` was then inspected with DuckDB: it contains 8,803,710 rows and the tested raw SMILES strings had no exact string matches. This remains only a checkpoint because SAIR may use alternate valid SMILES, and the public projection does not expose the interaction CSV through the documented source selector. Direct BigQuery querying also requires a role not available to the current account. Therefore, the network is a transparent first release: it includes literature-supported edges and records the missing canonical-structure join rather than treating missing access or missing annotation as absence. The exact retrieval and schema checkpoint is in `data/sair-release-metadata.json`.
 
 ## Next analysis
 
 Obtain the SAIR interaction CSV or a read-only BigQuery role, canonicalize all exact GCP SMILES, join by structure, and append assay endpoint, potency, units, protein ID, source release, manifest URI, and hash. Rank edges only after separating direct assays from docking and target-prediction records. Then compare estimated human plasma or brain exposure with assay concentrations.
-

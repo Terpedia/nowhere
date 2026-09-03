@@ -1,0 +1,13 @@
+{
+  "dataset": "SandboxAQ SAIR",
+  "object_uri": "gs://sandboxaq-sair/sair.parquet",
+  "object_size_bytes": 634883881,
+  "retrieved_at": "2026-09-03",
+  "retrieval_method": "gcloud storage cp followed by DuckDB read_parquet",
+  "row_count": 8803710,
+  "structure_join_status": "tested exact SMILES strings; no exact string matches",
+  "tested_smiles": ["CC(C)C12CC1C(C)C(=O)C2", "COc1ccc(/C=C/C)cc1", "CC1(C)[C@H]2CC[C@](C)(C2)C1=O", "CC(C)=CCC[C@@](C)(O)C=C"],
+  "columns": ["index", "vina_score_min", "vinardo_score", "vina_score", "aevplig_score", "onionnet_score", "entry_id", "protein", "sequence", "SMILES", "srcSMILES", "source", "description", "potency", "assay", "pIC50", "family", "acknowledgement"],
+  "interpretation": "This is a reproducibility checkpoint, not evidence that the compounds lack SAIR interactions. Canonical structure normalization and the interaction CSV/BigQuery projection remain required.",
+  "provenance": {"terpedia_reference": "docs/TERPEDIA_DATA_REFERENCE.md", "terpedia_project": "terpedia-489015", "terpedia_sair_raw_paths": ["gs://terpedia-knowledge-raw/raw/sair/sair.parquet", "gs://terpedia-knowledge-raw/raw/sair/protein_terpene_interactions.csv"], "license_status": "review_required"}
+}

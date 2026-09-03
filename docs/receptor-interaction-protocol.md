@@ -39,3 +39,6 @@ The public tabular API's `sair` search currently exposes `sair_structures`. Name
 
 Terpedia's unified search returned a `5-hydroxytryptamine receptor 2A` record (`protein:CDBP02043`) and GABA receptor records, including `protein:CDBP03419` (GABA-A beta-2), plus Cellosaurus assay-cell records for HTR2A. These are target and assay-resource records, not evidence that any absinthe terpene interacts with those receptors. The initial SAIR name searches and this distinction are recorded in the working session notes.
 
+## SAIR retrieval checkpoint (2026-09-03)
+
+The SandboxAQ release object `gs://sandboxaq-sair/sair.parquet` was retrieved and read with DuckDB. Its schema includes `protein`, `sequence`, `SMILES`, `srcSMILES`, `source`, `description`, `potency`, `assay`, `pIC50`, and docking/model-quality fields; the inspected object contains 8,803,710 rows. Exact raw-string comparisons for four resolved absinthe structures produced zero matches. This does not establish biological absence: canonicalization, stereochemical normalization, and the Terpedia-promoted `protein_terpene_interactions.csv` projection are still required. See `data/sair-release-metadata.json` for the reproducibility record.

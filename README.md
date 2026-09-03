@@ -15,6 +15,7 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 - `docs/receptor-interaction-protocol.md` — structure-first workflow for mapping absinthe terpenes to neural receptors.
 - `data/receptor-target-panel.csv` — initial prespecified receptor panel.
 - `data/receptor-interactome.csv` — initial evidence-qualified compound–receptor edges.
+- `data/sair-release-metadata.json` — SAIR parquet retrieval, schema, row-count, and structure-join checkpoint.
 - `manuscript/receptor-interactome-report.md` — network visualization, interpretation, and limitations.
 - `scripts/validate.py` — lightweight integrity checks for the data tables.
 
