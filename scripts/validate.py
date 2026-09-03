@@ -34,6 +34,9 @@ assert {"alpha-thujone", "trans-anethole", "linalool"} <= {row["compound"] for r
 assert {"direct binding and functional electrophysiology", "no qualifying interaction located"} <= {
     row["evidence_class"] for row in interactome
 }
+assert all(row["reported_concentration_mg_L"] for row in interactome)
+assert all(row["target_resolution"] for row in interactome)
+assert any(row["receptor_record_id"] == "protein:CDBP04867" for row in interactome)
 assert {"HTR2A", "HTR3A", "GABRB2", "TRPA1", "CNR1"} <= {row["target"] for row in panel}
 assert all(row["terpedia_record"].startswith("protein:") for row in panel)
 assert len(expanded_panel) >= 15
