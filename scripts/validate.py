@@ -17,6 +17,7 @@ compounds = read("absinthe-compounds.csv")
 framework = read("psychedelic-framework.csv")
 identifiers = read("terpedia-identifiers.csv")
 interactome = read("receptor-interactome.csv")
+panel = read("receptor-target-panel.csv")
 
 assert len(compounds) >= 20, "compound inventory unexpectedly short"
 assert len({row["compound"] for row in compounds}) == len(compounds), "duplicate compound"
@@ -32,4 +33,6 @@ assert {"alpha-thujone", "trans-anethole", "linalool"} <= {row["compound"] for r
 assert {"direct binding and functional electrophysiology", "no qualifying interaction located"} <= {
     row["evidence_class"] for row in interactome
 }
-print(f"validated {len(compounds)} compounds, {len(framework)} framework criteria, {len(identifiers)} identifiers, and {len(interactome)} interaction edges")
+assert {"HTR2A", "HTR3A", "GABRB2", "TRPA1", "CNR1"} <= {row["target"] for row in panel}
+assert all(row["terpedia_record"].startswith("protein:") for row in panel)
+print(f"validated {len(compounds)} compounds, {len(framework)} framework criteria, {len(identifiers)} identifiers, {len(panel)} receptor targets, and {len(interactome)} interaction edges")

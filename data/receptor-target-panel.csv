@@ -1,6 +1,6 @@
-target,terpedia_record,system,role_in_analysis,evidence_status
-HTR2A,protein:CDBP02043,serotonin 5-HT2A,"primary classic psychedelic comparator",target record only; compound interaction unresolved
-HTR3A,protein:CDBP02156,serotonin 5-HT3A,"secondary serotonin comparator",target record only; compound interaction unresolved
-GABRB2,protein:CDBP03419,GABA-A beta-2,"thujone toxicology comparator",target record only; compound interaction unresolved
-TRPA1,,transient receptor potential ankyrin 1,"anethole/linalool sensory pharmacology candidate",stable Terpedia record not yet resolved
-CNR1,,cannabinoid CB1,"historical thujone hypothesis control",historical hypothesis requires explicit negative/positive assay evidence
+target,terpedia_record,system,role_in_analysis,evidence_status,source,source_release,source_file_uri,content_sha256
+HTR2A,protein:CDBP02043,serotonin 5-HT2A,"primary classic psychedelic comparator",target record only; compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP02043,b60f3a6fbb13b464512766ce2149a105d18b2c186ed334b6be06c54347fc5c7f
+HTR3A,protein:CDBP02156,serotonin 5-HT3A,"secondary serotonin comparator",target record only; compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP02156,d72eaecd7dd4f00fee1f9f88a0184ab9554cd8de2e07fc4dc12cdd70de0dda50
+GABRB2,protein:CDBP03419,GABA-A beta-2,"thujone toxicology comparator",target record only; compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP03419,b40cd0701eed65ada911356123aa003967c67c1284046373795f1fbd10d0cc14
+TRPA1,protein:CDBP04867,transient receptor potential ankyrin 1,"anethole/linalool sensory pharmacology candidate",stable Terpedia protein record; compound edges separately evidence-qualified,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP04867,1de6c1ea4af797d4e5a8064375a8c91afee8d9cdef342dc1530e9b605b8cc350
+CNR1,protein:CDBP04807,cannabinoid CB1,"historical thujone hypothesis control",stable Terpedia protein record; compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP04807,ca6f61a5d3f3852f1b3fac7d4bcca230e0220a2c8932f1bfa5ec1fa5c57178c1
