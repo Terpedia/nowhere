@@ -1,0 +1,8 @@
+criterion,operational_question,preferred_evidence,absinthe_application
+chemical identity,Is the exact molecule/preparation resolved?,structure plus stereochemistry plus source record,"Resolve alpha/beta thujone and cis/trans anethole separately"
+primary target,Does it activate 5-HT2A at relevant concentrations?,binding and functional receptor assay,"Search each priority compound; absence of evidence remains unresolved"
+brain exposure,Can the active species reach the CNS at plausible human exposure?,PK and brain penetration with dose matching,"Compare reported COA concentrations with measured beverage intake"
+phenomenology,Does the preparation reproducibly alter perception/self-experience?,controlled human study with validated measures,"Separate subjective effects from historical narrative"
+causality,Does the preparation explain effects against ethanol and placebo controls?,randomized comparator or dose-resolved experiment,"Test absinthe versus ethanol-matched and botanical-matched controls"
+mixture mechanism,Could multiple weak effects combine?,component-resolved pharmacology and mixture experiment,"Model ethanol plus dominant anethole plus thujones plus other CNS-active constituents"
+classification,Does evidence satisfy the paper's definition of classic psychedelic?,joint target plus exposure plus phenomenology,"Report psychedelic; psychoactive-not-psychedelic; or unestablished"

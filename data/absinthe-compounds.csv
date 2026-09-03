@@ -1,0 +1,30 @@
+compound,cas,chemical_class,reported_source,reported_rt_min,reported_ri,reported_area_pct,reported_concentration_mg_L,match_pct,terpedia_observation,psychedelic_relevance,status
+alpha-pinene,80-56-8,monoterpene hydrocarbon,"grand wormwood; fennel; hyssop",5.92,932,0.4,4.8,94.1,"Reported in repository COA volatile fraction",none demonstrated,screen
+beta-pinene,127-91-3,monoterpene hydrocarbon,"hyssop; fennel",6.48,974,0.6,7.2,93.8,"Reported in repository COA volatile fraction",none demonstrated,screen
+beta-myrcene,123-35-3,acyclic monoterpene,"wormwood; fennel",6.71,988,0.3,3.6,92.4,"Reported in repository COA volatile fraction",none demonstrated,screen
+limonene,138-86-3,monoterpene hydrocarbon,fennel,7.52,1029,0.5,6.0,95.3,"Reported in repository COA volatile fraction",none demonstrated,screen
+"1,8-cineole",470-82-6,monoterpene ether,"petit wormwood",7.78,1031,0.4,4.8,96.2,"Reported in repository COA volatile fraction",none demonstrated,screen
+gamma-terpinene,99-85-4,monoterpene hydrocarbon,fennel,8.15,1054,0.2,2.4,90.3,"Reported in repository COA volatile fraction",none demonstrated,screen
+linalool,78-70-6,monoterpene alcohol,"anise; hyssop; lemon balm",9.23,1096,0.8,9.6,97.1,"Reported in repository COA volatile fraction",non-psychedelic CNS literature; verify,screen
+alpha-thujone,546-80-5,monoterpene ketone,"grand wormwood",9.61,1102,1.2,14.4,97.8,"Reported in repository COA volatile fraction",not 5-HT2A evidence; GABAergic/toxicology comparator,priority
+beta-thujone,471-15-8,monoterpene ketone,"grand wormwood; petit wormwood",9.84,1114,0.6,7.2,96.5,"Reported in repository COA volatile fraction",not 5-HT2A evidence; GABAergic/toxicology comparator,priority
+camphor,76-22-2,monoterpene ketone,wormwood,10.12,1146,0.3,3.6,95.7,"Reported in repository COA volatile fraction",none demonstrated,screen
+fenchone,1195-79-5,monoterpene ketone,fennel,10.45,1083,8.7,104.4,98.3,"Reported in repository COA volatile fraction",non-psychedelic CNS/toxicology comparator,priority
+pinocamphone,547-60-4,monoterpene ketone,hyssop,11.18,1162,0.5,6.0,93.2,"Reported in repository COA volatile fraction",GABAergic/toxicology comparator; verify,priority
+isopinocamphone,1882-26-4,monoterpene ketone,hyssop,11.47,1175,0.4,4.8,91.8,"Reported in repository COA volatile fraction",GABAergic/toxicology comparator; verify,priority
+citronellal,106-23-0,monoterpene aldehyde,"lemon balm",11.82,1148,0.2,2.4,90.1,"Reported in repository COA volatile fraction",none demonstrated,screen
+estragole,140-67-0,phenylpropanoid,"anise; fennel",12.34,1196,2.1,25.2,96.9,"Reported in repository COA volatile fraction",not 5-HT2A evidence; genotoxicity comparator,priority
+cis-anethole,25679-28-1,phenylpropanoid,"anise; fennel",14.56,1248,0.3,3.6,89.4,"Reported in repository COA volatile fraction",none demonstrated,screen
+anisaldehyde,123-11-5,aromatic aldehyde,anise,14.92,1250,0.8,9.6,94.6,"Reported in repository COA volatile fraction",none demonstrated,screen
+trans-anethole,4180-23-8,phenylpropanoid,"anise; fennel",15.38,1282,72.4,868.8,99.2,"Reported in repository COA volatile fraction",not 5-HT2A evidence; dominant exposure candidate,priority
+geranial,141-27-5,monoterpene aldehyde,"lemon balm",16.05,1267,0.1,1.2,88.7,"Reported in repository COA volatile fraction",none demonstrated,screen
+neral,106-26-3,monoterpene aldehyde,"lemon balm",16.28,1238,0.1,1.2,87.9,"Reported in repository COA volatile fraction",none demonstrated,screen
+trans-sabinyl acetate,3536-54-7,monoterpene ester,"grand wormwood",16.67,1290,0.6,7.2,90.8,"Reported in repository COA volatile fraction",none demonstrated,screen
+methyleugenol,93-15-2,phenylpropanoid,anise,17.23,1403,0.1,1.2,88.3,"Reported in repository COA volatile fraction",none demonstrated,screen
+beta-caryophyllene,87-44-5,sesquiterpene,"wormwood; lemon balm",18.56,1419,0.2,2.4,91.5,"Reported in repository COA volatile fraction",non-psychedelic receptor comparator; verify,screen
+gamma-himachalene,53111-25-4,sesquiterpene,anise,19.14,1484,0.1,1.2,87.2,"Reported in repository COA volatile fraction",none demonstrated,screen
+spathulenol,6750-60-3,sesquiterpene alcohol,wormwood,20.45,1578,0.1,1.2,86.4,"Reported in repository COA volatile fraction",none demonstrated,screen
+chamazulene,529-05-5,azulene sesquiterpene,wormwood,22.34,1731,trace,,85.1,"Reported as trace and below LOQ in repository COA",none demonstrated,screen
+absinthin,,dimeric sesquiterpene lactone,"grand wormwood",,,,,,"Listed on Terpedia absinthe profile; not part of volatile COA table",not assessed; nonvolatile fraction,screen
+artabsin,,sesquiterpene lactone,"grand wormwood",,,,,,"Listed on Terpedia absinthe profile; not part of volatile COA table",not assessed; nonvolatile fraction,screen
+rosmarinic acid,,polyphenol,"hyssop; lemon balm",,,,,,"Listed on Terpedia absinthe profile; nonvolatile coloring fraction",not assessed; nonvolatile fraction,screen
