@@ -51,6 +51,16 @@ python3 scripts/join_sair_parquet.py \
 
 The script forms the complete compound-by-panel cross-product while preserving each exact SMILES. It emits one row per compound-target pair and distinguishes exact isomeric matches, connectivity-only matches, and no join. It does not classify assay semantics; matched parquet rows must still be reviewed using `assay`, `potency`, `pIC50`, docking, and model-quality fields.
 
+For the recovered interaction projection, generate the explicit compound-by-panel matrix with:
+
+```bash
+python3 scripts/build_sair_coverage.py \
+  --structures data/terpedia-resolved-structure-records.csv \
+  --panel data/human-neural-receptor-panel.csv \
+  --interactions /tmp/sair-interactions.XXXXXX.csv \
+  --output data/sair-human-panel-coverage.csv
+```
+
 ## Minimum evidence table
 
 | Field | Why it is required |
