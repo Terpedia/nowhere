@@ -21,6 +21,7 @@ panel = read("receptor-target-panel.csv")
 expanded_panel = read("human-neural-receptor-panel.csv")
 resolved_structures = read("terpedia-resolved-structure-records.csv")
 identity_audit = read("terpedia-identity-audit.csv")
+expanded_join = read("sair-expanded-join-summary.csv")
 
 assert len(compounds) >= 20, "compound inventory unexpectedly short"
 assert len({row["compound"] for row in compounds}) == len(compounds), "duplicate compound"
@@ -49,4 +50,7 @@ assert all(row["source_object_uri"].endswith("supernatural2/full_data_download.c
 assert len(identity_audit) == len(compounds)
 assert {row["inventory_compound"] for row in identity_audit} == {row["compound"] for row in compounds}
 assert any(row["identity_status"] == "no Terpedia structure match" for row in identity_audit)
+assert len(expanded_join) == 27
+assert all(row["join_status"] == "no_match" for row in expanded_join)
+assert all(row["interaction_rows_scanned"] == "1489" for row in expanded_join)
 print(f"validated {len(compounds)} compounds, {len(framework)} framework criteria, {len(identifiers)} identifiers, {len(panel)} primary and {len(expanded_panel)} expanded receptor targets, and {len(interactome)} interaction edges")
