@@ -20,6 +20,7 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 - `data/sair-canonical-join-results.csv` — seven-target canonical and non-isomeric join results, including the 18,145-row compatible-candidate scan.
 - `manuscript/receptor-interactome-report.md` — network visualization, interpretation, and limitations.
 - `scripts/validate.py` — lightweight integrity checks for the data tables.
+- `scripts/join_sair_interactions.py` — reproducible RDKit canonical-structure join against the Terpedia SAIR interaction CSV.
 
 ## Terpedia source artifacts
 
