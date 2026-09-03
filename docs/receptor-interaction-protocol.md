@@ -23,6 +23,22 @@ The public tabular API's `sair` search currently exposes `sair_structures`. Name
 6. Compare observed or predicted targets against a prespecified panel: HTR2A (5-HT2A), HTR3A (5-HT3A), GABA-A subunits, CNR1 (CB1), TRPA1, and other targets returned by the join.
 7. Treat docking scores and target-fishing labels as hypothesis-generating only. They cannot establish affinity, agonism/antagonism, CNS exposure, or psychedelic phenomenology.
 
+## Reproduce the SAIR join
+
+The currently recovered content-addressed interaction projection can be fetched and joined with:
+
+```bash
+gcloud storage cp \
+  gs://terpedia-knowledge-raw/raw/terport-data/objects/cba55f60e6505b06aac9cb78b3340a5adeb3dfe8bef5bb9485a44cfeef4ba42e/sair/protein_terpene_interactions.csv \
+  /tmp/protein_terpene_interactions.csv
+python3 scripts/join_sair_interactions.py \
+  --targets data/sair-canonical-join-results.csv \
+  --interactions /tmp/protein_terpene_interactions.csv \
+  --output /tmp/sair-join-results.csv
+```
+
+The source projection contains protein IDs and interaction counts, but not assay semantics. Assay type, potency, and docking/model fields must therefore be obtained from the corresponding SAIR structure parquet before classifying a matched edge.
+
 ## Minimum evidence table
 
 | Field | Why it is required |

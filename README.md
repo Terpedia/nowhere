@@ -14,7 +14,7 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 - `docs/evidence-boundaries.md` — evidence taxonomy and rules for separating observation from inference.
 - `docs/receptor-interaction-protocol.md` — structure-first workflow for mapping absinthe terpenes to neural receptors.
 - `data/receptor-target-panel.csv` — initial prespecified receptor panel.
-- `data/human-neural-receptor-panel.csv` — expanded 18-target Terpedia panel; the five-target file remains the narrow primary comparator set.
+- `data/human-neural-receptor-panel.csv` — expanded 19-target Terpedia panel; the five-target file remains the narrow primary comparator set.
 - `data/receptor-interactome.csv` — initial evidence-qualified compound–receptor edges.
 - `data/sair-release-metadata.json` — SAIR parquet retrieval, schema, row-count, and structure-join checkpoint.
 - `data/sair-canonical-join-results.csv` — seven-target canonical and non-isomeric join results, including the 18,145-row compatible-candidate scan.
