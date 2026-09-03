@@ -1,0 +1,6 @@
+target,terpedia_record,system,role_in_analysis,evidence_status
+HTR2A,protein:CDBP02043,serotonin 5-HT2A,"primary classic psychedelic comparator",target record only; compound interaction unresolved
+HTR3A,protein:CDBP02156,serotonin 5-HT3A,"secondary serotonin comparator",target record only; compound interaction unresolved
+GABRB2,protein:CDBP03419,GABA-A beta-2,"thujone toxicology comparator",target record only; compound interaction unresolved
+TRPA1,,transient receptor potential ankyrin 1,"anethole/linalool sensory pharmacology candidate",stable Terpedia record not yet resolved
+CNR1,,cannabinoid CB1,"historical thujone hypothesis control",historical hypothesis requires explicit negative/positive assay evidence

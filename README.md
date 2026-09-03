@@ -12,6 +12,8 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 - `data/absinthe-compounds.csv` — compound inventory transcribed from Terpedia's absinthe COA and botanical attribution page.
 - `data/psychedelic-framework.csv` — operational criteria and comparator molecules for the literature review.
 - `docs/evidence-boundaries.md` — evidence taxonomy and rules for separating observation from inference.
+- `docs/receptor-interaction-protocol.md` — structure-first workflow for mapping absinthe terpenes to neural receptors.
+- `data/receptor-target-panel.csv` — initial prespecified receptor panel.
 - `scripts/validate.py` — lightweight integrity checks for the data tables.
 
 ## Terpedia source artifacts
@@ -30,4 +32,3 @@ The COA is a Terpedia artifact, not a newly generated measurement for this paper
 ```bash
 python3 scripts/validate.py
 ```
-
