@@ -16,6 +16,7 @@ def read(name):
 compounds = read("absinthe-compounds.csv")
 framework = read("psychedelic-framework.csv")
 identifiers = read("terpedia-identifiers.csv")
+interactome = read("receptor-interactome.csv")
 
 assert len(compounds) >= 20, "compound inventory unexpectedly short"
 assert len({row["compound"] for row in compounds}) == len(compounds), "duplicate compound"
@@ -27,4 +28,8 @@ assert {"primary target", "brain exposure", "phenomenology", "classification"} <
     row["criterion"] for row in framework
 }
 assert {"thujone", "limonene", "linalool"} <= {row["terpedia_label"] for row in identifiers}
-print(f"validated {len(compounds)} compounds, {len(framework)} framework criteria, and {len(identifiers)} identifiers")
+assert {"alpha-thujone", "trans-anethole", "linalool"} <= {row["compound"] for row in interactome}
+assert {"direct binding and functional electrophysiology", "no qualifying interaction located"} <= {
+    row["evidence_class"] for row in interactome
+}
+print(f"validated {len(compounds)} compounds, {len(framework)} framework criteria, {len(identifiers)} identifiers, and {len(interactome)} interaction edges")
