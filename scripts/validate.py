@@ -18,6 +18,7 @@ framework = read("psychedelic-framework.csv")
 identifiers = read("terpedia-identifiers.csv")
 interactome = read("receptor-interactome.csv")
 panel = read("receptor-target-panel.csv")
+expanded_panel = read("human-neural-receptor-panel.csv")
 
 assert len(compounds) >= 20, "compound inventory unexpectedly short"
 assert len({row["compound"] for row in compounds}) == len(compounds), "duplicate compound"
@@ -35,4 +36,6 @@ assert {"direct binding and functional electrophysiology", "no qualifying intera
 }
 assert {"HTR2A", "HTR3A", "GABRB2", "TRPA1", "CNR1"} <= {row["target"] for row in panel}
 assert all(row["terpedia_record"].startswith("protein:") for row in panel)
-print(f"validated {len(compounds)} compounds, {len(framework)} framework criteria, {len(identifiers)} identifiers, {len(panel)} receptor targets, and {len(interactome)} interaction edges")
+assert len(expanded_panel) >= 15
+assert all(row["terpedia_record"].startswith("protein:") for row in expanded_panel)
+print(f"validated {len(compounds)} compounds, {len(framework)} framework criteria, {len(identifiers)} identifiers, {len(panel)} primary and {len(expanded_panel)} expanded receptor targets, and {len(interactome)} interaction edges")

@@ -37,7 +37,7 @@ The public tabular API's `sair` search currently exposes `sair_structures`. Name
 
 ## Current live-search result
 
-Terpedia's unified search returned stable protein records for the prespecified panel: HTR2A (`protein:CDBP02043`), HTR3A (`protein:CDBP02156`), GABRB2 (`protein:CDBP03419`), TRPA1 (`protein:CDBP04867`), and CNR1/CB1 (`protein:CDBP04807`). These are target and assay-resource records, not evidence that any absinthe terpene interacts with those receptors. Each record's source release, URL, and content hash are retained in `data/receptor-target-panel.csv`. The initial SAIR name searches and this distinction are recorded in the working session notes.
+Terpedia's unified search returned stable protein records for the original five-target comparator panel: HTR2A (`protein:CDBP02043`), HTR3A (`protein:CDBP02156`), GABRB2 (`protein:CDBP03419`), TRPA1 (`protein:CDBP04867`), and CNR1/CB1 (`protein:CDBP04807`). This is not a claim that humans have five neural receptors. An expanded panel of 18 serotonin, GABA-A, dopamine, opioid, cholinergic, cannabinoid, sensory-channel, glutamatergic, and transporter targets is in `data/human-neural-receptor-panel.csv`. These are target and assay-resource records, not evidence that any absinthe terpene interacts with those receptors. The original panel retains content hashes; the expanded panel retains source release and stable record URLs. The initial SAIR name searches and this distinction are recorded in the working session notes.
 
 ## SAIR retrieval checkpoint (2026-09-03)
 

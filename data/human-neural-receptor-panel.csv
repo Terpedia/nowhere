@@ -1,0 +1,20 @@
+target,terpedia_record,system,role_in_analysis,evidence_status,source,source_release,source_file_uri
+HTR1A,protein:CDBP01994,5-HT1A serotonin receptor,serotonergic comparator,target record only; absinthe compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP01994
+HTR2A,protein:CDBP02043,5-HT2A serotonin receptor,primary classic psychedelic comparator,target record only; absinthe compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP02043
+HTR2C,protein:CDBP02060,5-HT2C serotonin receptor,serotonergic comparator,target record only; absinthe compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP02060
+HTR3A,protein:CDBP02156,5-HT3A serotonin receptor,serotonergic comparator,target record only; absinthe compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP02156
+HTR7,protein:CDBP01867,5-HT7 serotonin receptor,serotonergic comparator,target record only; absinthe compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP01867
+GABRA1,protein:CDBP03412,GABA-A alpha-1,thujone and sedative/toxicology comparator,target record only; compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP03412
+GABRA2,protein:CDBP03413,GABA-A alpha-2,thujone and sedative/toxicology comparator,target record only; compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP03413
+GABRB2,protein:CDBP03419,GABA-A beta-2,thujone toxicology comparator,target record only; compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP03419
+GABRG2,protein:CDBP01864,GABA-A gamma-2,thujone and sedative/toxicology comparator,target record only; compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP01864
+DRD1,protein:CDBP04812,D1 dopamine receptor,dopaminergic comparator,target record only; compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP04812
+DRD2,protein:CDBP01576,D2 dopamine receptor,dopaminergic comparator,target record only; compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP01576
+CHRM2,protein:CDBP04814,muscarinic acetylcholine receptor M2,autonomic/CNS comparator,target record only; compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP04814
+OPRM1,protein:CDBP02036,mu opioid receptor,opioid/CNS comparator,target record only; compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP02036
+CNR1,protein:CDBP04807,CB1 cannabinoid receptor,historical thujone hypothesis control,target record only; compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP04807
+TRPA1,protein:CDBP04867,TRPA1 sensory-neural channel,anethole sensory pharmacology candidate,trans-anethole edge separately supported,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP04867
+TRPM8,protein:CDBP01847,TRPM8 sensory channel,sensory-neural comparator,target record only; absinthe compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP01847
+TRPV1,protein:CDBP01848,TRPV1 sensory channel,sensory-neural comparator,target record only; absinthe compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP01848
+GRIN1,protein:CDBP01515,NMDA receptor subunit 1,glutamatergic circuit comparator,target record only; absinthe compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP01515
+SLC6A4,protein:CDBP01822,serotonin transporter,monoamine-transporter comparator,target record only; absinthe compound interaction unresolved,cannabisdb,1.0-a7d05067088ee5b8,https://cannabisdatabase.ca/proteins/CDBP01822
