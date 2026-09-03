@@ -1,0 +1,5 @@
+terpedia_label,chebi_id,aliases,identity_note,source_artifact
+thujone,CHEBI:50040,"3-thujanone; 4-methyl-1-(propan-2-yl)bicyclo[3.1.0]hexan-3-one; thujan-3-one","Generic thujone entity; alpha/beta stereochemical records must not be collapsed into it without checking the source record",../terport/data/terpenes.json
+limonene,CHEBI:15384,"(+/-)-limonene; dipentene; p-mentha-1,8-diene","Generic limonene entity; stereochemical form remains source-dependent",../terport/data/terpenes.json
+linalool,CHEBI:17580,"3,7-dimethylocta-1,6-dien-3-ol; linalyl alcohol; beta-linalool","Generic linalool entity; enantiomeric form remains source-dependent",../terport/data/terpenes.json
+beta-myrcene,CHEBI:17221,"7-methyl-3-methyleneocta-1,6-diene; beta-myrcene","Terpedia label is myrcene with beta-myrcene alias",../terport/data/terpenes.json

@@ -1,0 +1,12 @@
+{
+  "retrieval_date": "2026-09-03",
+  "purpose": "Read-only reachability and route check for the Absinthe paper",
+  "authoritative_source": "Terpedia KB on GCP/GCE",
+  "routes": [
+    {"url": "http://104.197.255.123:8010/health", "status": "timeout", "interpretation": "No KB result; endpoint not reachable from this session"},
+    {"url": "https://kb.terpedia.com/health", "status": "404_static_site", "interpretation": "Public hostname serves a static KB page, not the documented API route"},
+    {"url": "https://kb.terpedia.com/entities/search?q=thujone", "status": "404_static_site", "interpretation": "Search route is not exposed on the public static hostname"}
+  ],
+  "negative_result_policy": "Route failure is not interpreted as chemical or pharmacological absence.",
+  "local_reconciliation": "Used Terpedia terport/data/terpenes.json for stable identifiers where available; unresolved identities remain explicitly marked."
+}

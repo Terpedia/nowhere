@@ -15,6 +15,7 @@ def read(name):
 
 compounds = read("absinthe-compounds.csv")
 framework = read("psychedelic-framework.csv")
+identifiers = read("terpedia-identifiers.csv")
 
 assert len(compounds) >= 20, "compound inventory unexpectedly short"
 assert len({row["compound"] for row in compounds}) == len(compounds), "duplicate compound"
@@ -25,4 +26,5 @@ for row in compounds:
 assert {"primary target", "brain exposure", "phenomenology", "classification"} <= {
     row["criterion"] for row in framework
 }
-print(f"validated {len(compounds)} compounds and {len(framework)} framework criteria")
+assert {"thujone", "limonene", "linalool"} <= {row["terpedia_label"] for row in identifiers}
+print(f"validated {len(compounds)} compounds, {len(framework)} framework criteria, and {len(identifiers)} identifiers")
