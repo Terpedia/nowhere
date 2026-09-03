@@ -40,6 +40,12 @@ Chemical records were kept separate when the source distinguishes stereoisomers 
 
 Each claim is coded as observed in a Terpedia artifact, directly characterized in a primary experiment, mechanistically supported, or unestablished. A GC–MS library match is chemical-identification evidence for the analyzed sample; it is not receptor or phenomenology evidence. A connected biochemical graph path is a testable hypothesis, not proof of in vivo production or human pharmacology.
 
+### 3.3 Structure-first receptor interactome
+
+We prespecified a five-target comparator panel (HTR2A, HTR3A, GABRB2, TRPA1, and CNR1) and expanded it to 19 Terpedia-linked human neural/CNS target records spanning serotonin, GABA-A, dopamine, opioid, cholinergic, cannabinoid, sensory-channel, glutamatergic, and transporter systems. Stable Terpedia protein record IDs, source releases, URLs, and content hashes are retained in the panel tables. The target panel is a comparator universe, not evidence of interaction.
+
+Resolved Terpedia structures were joined to the recovered SAIR interaction projection by RDKit canonical isomeric SMILES, with a second non-isomeric check used to detect connectivity-only matches. The projection contains 1,489 rows, 397 protein IDs, and 907 unique structures. Thirty-five resolved structure records representing 27 inventory compounds were scanned; no isomeric or non-isomeric matches were found. This database result is reported as “no join found,” not as evidence of receptor inactivity. Literature-supported edges were retained separately in an evidence-qualified interactome, with direct binding/functional assay results distinguished from preclinical candidates and unresolved 5-HT2A tests. Reported beverage concentrations were attached as exposure context, never substituted for plasma or brain concentrations. Full procedures and source checks are in `docs/receptor-interaction-protocol.md`, `docs/identity-resolution.md`, and the `data/` tables.
+
 ## 4. Absinthe molecular inventory
 
 The repository COA describes a Swiss-style absinthe verte analyzed by HS-SPME/GC–MS. It reports 27 identified volatile entries, 91.2% total identified area, and 8.8% unidentified peaks. The dominant reported constituent is trans-anethole at 72.4 area% and 868.8 mg/L. Fenchone is reported at 8.7 area% and 104.4 mg/L. Alpha- and beta-thujone are reported at 14.4 and 7.2 mg/L, respectively, for a combined 21.6 mg/L. These values are repository observations, not independent measurements generated for this study.
@@ -84,6 +90,8 @@ The phrase “absinthe is psychedelic” compresses at least three distinct clai
 | Absinthe constituents activate 5-HT2A at human-relevant exposure | Unestablished | No complete compound-resolved receptor/exposure dataset located |
 | Absinthe produces a reproducible classic psychedelic state | Unestablished | A human matched-alcohol thujone study measured attention/mood, not psychedelic phenomenology |
 | Historical absinthism proves a psychedelic mechanism | Not supported | Historical symptom reports are non-specific and confounded |
+| Resolved absinthe structures have SAIR projection matches | No match found in the inspected release | 35 structures representing 27 inventory compounds; no isomeric or connectivity-only match; not biological absence |
+| Absinthe terpene–receptor edges are all experimentally established | Not supported | The network separates direct assays, preclinical modulation, candidate hypotheses, and unresolved target tests |
 
 ### Conclusion
 
@@ -91,7 +99,7 @@ On the Terpedia evidence currently assembled, absinthe should be classified as a
 
 ## 8. Limitations and next experiments
 
-The COA lacks raw chromatograms, reference-standard traces, calibration files, bottle identity, alcohol-by-volume confirmation, and independent replication. The GCP KB could not be queried live in this run. Several compounds have incomplete stable identifiers in the local profile. Literature coverage is a first-pass map rather than a systematic review with registered search strings and dual screening.
+The COA lacks raw chromatograms, reference-standard traces, calibration files, bottle identity, alcohol-by-volume confirmation, and independent replication. Terpedia's authenticated public API and content-addressed SAIR interaction projection were queried, but direct BigQuery access and the full SAIR structure-parquet join remain operationally separate from the public projection. Several compounds still have ambiguous stereoisomer assignment or source-label discrepancies, and one inventory name lacks a Terpedia structure match. Literature coverage is a first-pass map rather than a systematic review with registered search strings and dual screening.
 
 The smallest decisive experimental program is:
 
