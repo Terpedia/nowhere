@@ -19,7 +19,7 @@ def canonical(smiles, isomeric=True):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--targets", required=True, help="CSV with compound, structure_identifier, and smiles")
+    parser.add_argument("--targets", required=True, help="CSV with compound/structure_identifier or inventory_compound/terpedia_id, plus smiles")
     parser.add_argument("--interactions", required=True, help="SAIR CSV with protein and SMILES columns")
     parser.add_argument("--output", required=True)
     args = parser.parse_args()
@@ -31,6 +31,8 @@ def main():
 
     output = []
     for target in targets:
+        compound = target.get("compound") or target["inventory_compound"]
+        structure_identifier = target.get("structure_identifier") or target["terpedia_id"]
         target_iso = canonical(target["smiles"], True)
         target_noniso = canonical(target["smiles"], False)
         iso_matches = []
@@ -44,8 +46,8 @@ def main():
                 noniso_matches.append(interaction)
 
         output.append({
-            "compound": target["compound"],
-            "structure_identifier": target["structure_identifier"],
+            "compound": compound,
+            "structure_identifier": structure_identifier,
             "smiles": target["smiles"],
             "canonical_smiles": target_iso,
             "interaction_rows_scanned": len(interactions),
