@@ -1,0 +1,30 @@
+inventory_compound,identity_status,terpedia_match_ids,terpedia_match_count,stable_identifier_basis,interpretation
+alpha-pinene,stereoisomer family matched,SN0113697;SN0113697-01;SN0113697-02;SN0113697-03,4,InChIKey connectivity block,COA name does not specify the enantiomer; preserve candidates separately
+beta-pinene,stereoisomer family matched,SN0419253;SN0419253-01;SN0419253-02;SN0419253-03;SN0419253-04,5,InChIKey connectivity block,COA name does not specify the enantiomer; preserve candidates separately
+beta-myrcene,structure matched label discrepancy,SN0364992,1,exact InChIKey,Terpedia labels the matched structure alpha-myrcene; do not silently rename it beta-myrcene
+limonene,stereoisomer family matched,SN0434098;SN0434098-01;SN0434098-02,3,InChIKey connectivity block,COA name does not specify the enantiomer; preserve candidates separately
+"1,8-cineole",no Terpedia structure match,,none,Common-name candidate was not found in the inspected SuperNatural II release
+gamma-terpinene,structure matched label discrepancy,SN0452646,1,exact InChIKey,Terpedia labels the matched structure alpha-terpinene; retain the source label and identity caveat
+linalool,stereoisomers matched,SN0042830;SN0042830-01;SN0042830-02,3,exact and connectivity InChIKey,COA name is non-isomeric; both enantiomers are retained
+alpha-thujone,exact isomer resolved,SN0378958-02,1,exact InChIKey,Terpedia thujone record selected for the alpha-thujone evidence row
+beta-thujone,exact isomer resolved,SN0378958-01,1,exact InChIKey,Terpedia beta-thujone record
+camphor,stereoisomer family matched,SN0074465;SN0074465-01;SN0074465-02;SN0074465-03;SN0074465-04;SN0074465-05;SN0074465-06,7,InChIKey connectivity block,COA name does not specify D or L camphor
+fenchone,stereoisomers matched,SN0205925;SN0205925-01;SN0205925-02;SN0205925-03;SN0205925-04;SN0205925-05;SN0205925-06,7,InChIKey connectivity block,Both enantiomeric source records retained
+pinocamphone,exact structure matched under source systematic name,SN0232749;SN0232749-02;SN0232749-04;SN0232749-05;SN0232749-07,5,exact InChIKey,Common-name assignment requires source-chemistry confirmation
+isopinocamphone,exact structure matched under source systematic name,SN0232749-06,1,exact InChIKey,Common-name assignment requires source-chemistry confirmation
+citronellal,stereoisomer family matched,SN0243104;SN0243104-01;SN0243104-02,3,InChIKey connectivity block,COA name does not specify the enantiomer
+estragole,structure matched label discrepancy,SN0469008,1,exact InChIKey,Terpedia matched a tarragon-labelled structure; retain label caveat
+cis-anethole,exact cis candidate matched,SN0335873-01,1,exact stereochemical InChIKey,Source label is p-propenylanisole; structure is retained as the cis candidate
+anisaldehyde,exact structure resolved,SN0478525,1,exact InChIKey,Exact Terpedia structure record
+trans-anethole,exact E candidate matched,SN0335873;SN0335873-02,2,exact stereochemical InChIKey,Terpedia label is anethole with E-configured structure
+geranial,exact E candidate matched,SN0419383;SN0419383-01,2,exact stereochemical InChIKey,Terpedia source labels the structure alpha-citral
+neral,exact Z candidate matched,SN0419383-02,1,exact stereochemical InChIKey,Terpedia source uses systematic citral naming
+trans-sabinyl acetate,connectivity family only,SN0281201;SN0281201-01;SN0281201-02;SN0281201-03;SN0281201-04;SN0281201-05,6,InChIKey connectivity block,No exact candidate stereochemical InChIKey in Terpedia release
+methyleugenol,exact structure resolved,SN0483473,1,exact InChIKey,Terpedia labels the structure methyl eugenol
+beta-caryophyllene,exact stereoisomer matched,SN0251863-14,1,exact stereochemical InChIKey,Terpedia parent family contains the matched beta-caryophyllene structure
+gamma-himachalene,connectivity family only,SN0295822;SN0295822-01;SN0295822-02;SN0295822-03,4,InChIKey connectivity block,Retain the exact source label gamma-himachalene only for the matching source row
+spathulenol,stereoisomer family matched,SN0093583 family,26,InChIKey connectivity block,Multiple stereoisomer records require source-specific assignment
+chamazulene,exact structure resolved,SN0117805,1,exact InChIKey,Exact Terpedia structure record
+absinthin,exact structure family resolved,SN0299194 family,9,exact InChIKey,Nonvolatile constituent; multiple conformer/stereo encodings in source export
+artabsin,exact structure family resolved,SN0037820;SN0037820-01;SN0037820-02,3,exact and connectivity InChIKey,Nonvolatile constituent; retain source stereochemistry
+rosmarinic acid,stereoisomer family matched,SN0071428 family,8,InChIKey connectivity block,Nonvolatile constituent; source includes several stereochemical encodings

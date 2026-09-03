@@ -20,6 +20,7 @@ interactome = read("receptor-interactome.csv")
 panel = read("receptor-target-panel.csv")
 expanded_panel = read("human-neural-receptor-panel.csv")
 resolved_structures = read("terpedia-resolved-structure-records.csv")
+identity_audit = read("terpedia-identity-audit.csv")
 
 assert len(compounds) >= 20, "compound inventory unexpectedly short"
 assert len({row["compound"] for row in compounds}) == len(compounds), "duplicate compound"
@@ -45,4 +46,7 @@ assert all(row["terpedia_record"].startswith("protein:") for row in expanded_pan
 assert len(resolved_structures) >= 15
 assert all(row["terpedia_id"].startswith("SN") and row["inchi_key"] and row["smiles"] for row in resolved_structures)
 assert all(row["source_object_uri"].endswith("supernatural2/full_data_download.csv") for row in resolved_structures)
+assert len(identity_audit) == len(compounds)
+assert {row["inventory_compound"] for row in identity_audit} == {row["compound"] for row in compounds}
+assert any(row["identity_status"] == "no Terpedia structure match" for row in identity_audit)
 print(f"validated {len(compounds)} compounds, {len(framework)} framework criteria, {len(identifiers)} identifiers, {len(panel)} primary and {len(expanded_panel)} expanded receptor targets, and {len(interactome)} interaction edges")
