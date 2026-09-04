@@ -8,6 +8,13 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 
 ## Repository map
 
+## Published analysis artifacts
+
+- [Terpedia modulation data](data/psychedelic-modulation-map.csv) — the 29-compound evidence-tier map.
+- [Source-level evidence data](data/source-level-evidence.csv) — source-by-source results and limitations.
+- [Colab notebook](notebooks/absinthe_terpedia_analysis.ipynb) — reproducible Terpedia snapshot analysis with optional live-KB confirmation.
+- [JPS manuscript](manuscript/article.md) — critical review manuscript.
+
 - `manuscript/outline.md` — paper question, hypotheses, methods, and planned sections.
 - `data/absinthe-compounds.csv` — compound inventory transcribed from Terpedia's absinthe COA and botanical attribution page.
 - `data/psychedelic-framework.csv` — operational criteria and comparator molecules for the literature review.
