@@ -21,6 +21,7 @@ panel = read("receptor-target-panel.csv")
 expanded_panel = read("human-neural-receptor-panel.csv")
 resolved_structures = read("terpedia-resolved-structure-records.csv")
 identity_audit = read("terpedia-identity-audit.csv")
+unresolved_aliases = read("terpedia-unresolved-aliases.csv")
 expanded_join = read("sair-expanded-join-summary.csv")
 crosswalk = read("sair-protein-crosswalk.csv")
 full_panel_join = read("sair-19-target-parquet-join.csv")
@@ -54,6 +55,8 @@ assert all(row["source_object_uri"].endswith("supernatural2/full_data_download.c
 assert len(identity_audit) == len(compounds)
 assert {row["inventory_compound"] for row in identity_audit} == {row["compound"] for row in compounds}
 assert any(row["identity_status"] == "no Terpedia structure match" for row in identity_audit)
+assert len(unresolved_aliases) == 2
+assert all(row["structure_available"] == "no" and row["terpedia_record"] for row in unresolved_aliases)
 assert len(expanded_join) == 27
 assert all(row["join_status"] == "no_match" for row in expanded_join)
 assert all(row["interaction_rows_scanned"] == "1489" for row in expanded_join)

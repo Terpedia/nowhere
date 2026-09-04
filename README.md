@@ -25,6 +25,7 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 - `data/sair-expanded-join-summary.csv` — complete SAIR interaction-projection join summary for all resolved structure records.
 - `data/terpedia-resolved-structure-records.csv` — exact structure records recovered from the full Terpedia SuperNatural II export; unresolved inventory names remain separate.
 - `data/terpedia-identity-audit.csv` — full 29-compound identity audit, including source-label discrepancies and unresolved stereochemistry.
+- `data/terpedia-unresolved-aliases.csv` — Terpedia alias records found without exposed structure fields; not promoted into SAIR joins.
 - `docs/identity-resolution.md` — identity-resolution rules and the boundary between supplemental lookup and Terpedia adjudication.
 - `manuscript/receptor-interactome-report.md` — network visualization, interpretation, and limitations.
 - `scripts/validate.py` — lightweight integrity checks for the data tables.
