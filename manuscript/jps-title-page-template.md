@@ -16,11 +16,14 @@ Review Article
 
 ## Corresponding author
 
-`Daniel C. McShan, PhD — postal address and email address to be supplied`
+Daniel C. McShan, PhD
+Terpedia, LLC
+21085 Capella Dr, Monument, CO 80132
+dan@terpedia.com
 
 ## Declarations
 
-- Conflicts of interest: None declared, or complete as applicable.
-- Funding: `[insert funding statement]`
+- Conflicts of interest: None declared.
+- Funding: Self-funded. Google for Startups cloud-credit use, if any, should be confirmed as infrastructure support rather than grant funding.
 - Data/code availability: Terpedia-derived tables, analysis notebook, provenance records, and validation code are included in the repository submission supplement.
 - Human/animal ethics: No new human or animal experiments were conducted.

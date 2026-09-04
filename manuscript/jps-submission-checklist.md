@@ -15,8 +15,8 @@
 ## Author-supplied metadata before upload
 
 - [ ] Author names and affiliations
-- [ ] Corresponding-author postal and email details
-- [ ] Funding statement
-- [ ] Final conflict-of-interest statement
+- [x] Corresponding-author postal and email details
+- [x] Funding statement, pending confirmation of any Google for Startups cloud-credit use
+- [x] Final conflict-of-interest statement
 - [ ] Final data/code repository URL or supplementary archive
 - [ ] Blinded manuscript export with author-identifying metadata removed
