@@ -25,6 +25,7 @@ expanded_join = read("sair-expanded-join-summary.csv")
 crosswalk = read("sair-protein-crosswalk.csv")
 full_panel_join = read("sair-19-target-parquet-join.csv")
 projection_coverage = read("sair-human-panel-coverage.csv")
+panel_evidence = read("sair-human-panel-evidence-summary.csv")
 
 assert len(compounds) >= 20, "compound inventory unexpectedly short"
 assert len({row["compound"] for row in compounds}) == len(compounds), "duplicate compound"
@@ -69,4 +70,8 @@ assert len({row["compound"] for row in projection_coverage}) == 27
 assert len({row["target"] for row in projection_coverage}) == 19
 assert all(row["join_status"] == "no_join_found" for row in projection_coverage)
 assert all(row["sair_protein_id"] for row in projection_coverage)
+assert len(panel_evidence) == 19
+assert {row["target"] for row in panel_evidence} == {row["target"] for row in expanded_panel}
+assert all(row["source_object"] == "gs://sandboxaq-sair/sair.parquet" for row in panel_evidence)
+assert sum(int(row["parquet_rows"]) for row in panel_evidence) == 136025
 print(f"validated {len(compounds)} compounds, {len(framework)} framework criteria, {len(identifiers)} identifiers, {len(panel)} primary and {len(expanded_panel)} expanded receptor targets, and {len(interactome)} interaction edges")

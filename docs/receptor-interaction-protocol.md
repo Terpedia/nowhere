@@ -53,6 +53,8 @@ For the authenticated GCP object, export a short-lived access token as `TERPEDIA
 
 The script forms the complete compound-by-panel cross-product while preserving each exact SMILES. It emits one row per compound-target pair and distinguishes exact isomeric matches, connectivity-only matches, and no join. It does not classify assay semantics; matched parquet rows must still be reviewed using `assay`, `potency`, `pIC50`, docking, and model-quality fields.
 
+`data/sair-human-panel-evidence-summary.csv` records, by UniProt target, the number of parquet rows carrying assay, potency, pIC50, Vina-score, and confidence-score fields. Field presence is metadata availability only: it does not convert a docking record into a binding or functional assay result.
+
 For the recovered interaction projection, generate the explicit compound-by-panel matrix with:
 
 ```bash
