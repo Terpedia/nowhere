@@ -36,6 +36,7 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 - `manuscript/figure-1-evidence-map.mmd` — editable Figure 1 network source.
 - `manuscript/jps-cover-letter.md` — JPS cover letter draft.
 - `manuscript/jps-title-page-template.md` — separate JPS title-page template.
+- `manuscript/jps-submission-checklist.md` — final scientific-package and author-metadata checklist.
 - `manuscript/jps-cover-letter.md` — cover letter positioning the paper as a critical Review Article.
 - `manuscript/jps-title-page-template.md` — separate title-page template for JPS double-blind submission.
 - `notebooks/absinthe_terpedia_analysis.ipynb` — Colab-compatible Terpedia-only methods and results notebook.
