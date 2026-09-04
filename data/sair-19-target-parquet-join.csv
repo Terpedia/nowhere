@@ -1,4 +1,5 @@
 compound,target,receptor_record_id,sair_protein_id,target_smiles,compatible_sair_rows,isomeric_match_rows,nonisomeric_match_rows,join_status
+"1,8-cineole",TRPA1,protein:CDBP04867,O75762,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,14735,0,0,no_match
 absinthin,TRPA1,protein:CDBP04867,O75762,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,14735,0,0,no_match
 alpha-pinene,TRPA1,protein:CDBP04867,O75762,CC1=CC[C@@H]2C[C@H]1C2(C)C,14735,0,0,no_match
 alpha-pinene,TRPA1,protein:CDBP04867,O75762,CC1=CC[C@H]2CC1C2(C)C,14735,0,0,no_match
@@ -33,6 +34,7 @@ pinocamphone,TRPA1,protein:CDBP04867,O75762,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,14
 rosmarinic acid,TRPA1,protein:CDBP04867,O75762,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,14735,0,0,no_match
 spathulenol,TRPA1,protein:CDBP04867,O75762,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,14735,0,0,no_match
 trans-anethole,TRPA1,protein:CDBP04867,O75762,COc1ccc(/C=C/C)cc1,14735,0,0,no_match
+"1,8-cineole",CHRM2,protein:CDBP04814,P08172,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,4180,0,0,no_match
 absinthin,CHRM2,protein:CDBP04814,P08172,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,4180,0,0,no_match
 alpha-pinene,CHRM2,protein:CDBP04814,P08172,CC1=CC[C@@H]2C[C@H]1C2(C)C,4180,0,0,no_match
 alpha-pinene,CHRM2,protein:CDBP04814,P08172,CC1=CC[C@H]2CC1C2(C)C,4180,0,0,no_match
@@ -67,6 +69,7 @@ pinocamphone,CHRM2,protein:CDBP04814,P08172,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,41
 rosmarinic acid,CHRM2,protein:CDBP04814,P08172,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,4180,0,0,no_match
 spathulenol,CHRM2,protein:CDBP04814,P08172,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,4180,0,0,no_match
 trans-anethole,CHRM2,protein:CDBP04814,P08172,COc1ccc(/C=C/C)cc1,4180,0,0,no_match
+"1,8-cineole",HTR1A,protein:CDBP01994,P08908,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,4610,0,0,no_match
 absinthin,HTR1A,protein:CDBP01994,P08908,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,4610,0,0,no_match
 alpha-pinene,HTR1A,protein:CDBP01994,P08908,CC1=CC[C@@H]2C[C@H]1C2(C)C,4610,0,0,no_match
 alpha-pinene,HTR1A,protein:CDBP01994,P08908,CC1=CC[C@H]2CC1C2(C)C,4610,0,0,no_match
@@ -101,6 +104,7 @@ pinocamphone,HTR1A,protein:CDBP01994,P08908,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,46
 rosmarinic acid,HTR1A,protein:CDBP01994,P08908,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,4610,0,0,no_match
 spathulenol,HTR1A,protein:CDBP01994,P08908,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,4610,0,0,no_match
 trans-anethole,HTR1A,protein:CDBP01994,P08908,COc1ccc(/C=C/C)cc1,4610,0,0,no_match
+"1,8-cineole",DRD2,protein:CDBP01576,P14416,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,6305,0,0,no_match
 absinthin,DRD2,protein:CDBP01576,P14416,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,6305,0,0,no_match
 alpha-pinene,DRD2,protein:CDBP01576,P14416,CC1=CC[C@@H]2C[C@H]1C2(C)C,6305,0,0,no_match
 alpha-pinene,DRD2,protein:CDBP01576,P14416,CC1=CC[C@H]2CC1C2(C)C,6305,0,0,no_match
@@ -135,6 +139,7 @@ pinocamphone,DRD2,protein:CDBP01576,P14416,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,630
 rosmarinic acid,DRD2,protein:CDBP01576,P14416,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,6305,0,0,no_match
 spathulenol,DRD2,protein:CDBP01576,P14416,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,6305,0,0,no_match
 trans-anethole,DRD2,protein:CDBP01576,P14416,COc1ccc(/C=C/C)cc1,6305,0,0,no_match
+"1,8-cineole",GABRA1,protein:CDBP03412,P14867,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,265,0,0,no_match
 absinthin,GABRA1,protein:CDBP03412,P14867,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,265,0,0,no_match
 alpha-pinene,GABRA1,protein:CDBP03412,P14867,CC1=CC[C@@H]2C[C@H]1C2(C)C,265,0,0,no_match
 alpha-pinene,GABRA1,protein:CDBP03412,P14867,CC1=CC[C@H]2CC1C2(C)C,265,0,0,no_match
@@ -169,6 +174,7 @@ pinocamphone,GABRA1,protein:CDBP03412,P14867,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,2
 rosmarinic acid,GABRA1,protein:CDBP03412,P14867,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,265,0,0,no_match
 spathulenol,GABRA1,protein:CDBP03412,P14867,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,265,0,0,no_match
 trans-anethole,GABRA1,protein:CDBP03412,P14867,COc1ccc(/C=C/C)cc1,265,0,0,no_match
+"1,8-cineole",GABRG2,protein:CDBP01864,P18507,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,0,0,0,no_match
 absinthin,GABRG2,protein:CDBP01864,P18507,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,0,0,0,no_match
 alpha-pinene,GABRG2,protein:CDBP01864,P18507,CC1=CC[C@@H]2C[C@H]1C2(C)C,0,0,0,no_match
 alpha-pinene,GABRG2,protein:CDBP01864,P18507,CC1=CC[C@H]2CC1C2(C)C,0,0,0,no_match
@@ -203,6 +209,7 @@ pinocamphone,GABRG2,protein:CDBP01864,P18507,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,0
 rosmarinic acid,GABRG2,protein:CDBP01864,P18507,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,0,0,0,no_match
 spathulenol,GABRG2,protein:CDBP01864,P18507,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,0,0,0,no_match
 trans-anethole,GABRG2,protein:CDBP01864,P18507,COc1ccc(/C=C/C)cc1,0,0,0,no_match
+"1,8-cineole",CNR1,protein:CDBP04807,P21554,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,11855,0,0,no_match
 absinthin,CNR1,protein:CDBP04807,P21554,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,11855,0,0,no_match
 alpha-pinene,CNR1,protein:CDBP04807,P21554,CC1=CC[C@@H]2C[C@H]1C2(C)C,11855,0,0,no_match
 alpha-pinene,CNR1,protein:CDBP04807,P21554,CC1=CC[C@H]2CC1C2(C)C,11855,0,0,no_match
@@ -237,6 +244,7 @@ pinocamphone,CNR1,protein:CDBP04807,P21554,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,118
 rosmarinic acid,CNR1,protein:CDBP04807,P21554,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,11855,0,0,no_match
 spathulenol,CNR1,protein:CDBP04807,P21554,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,11855,0,0,no_match
 trans-anethole,CNR1,protein:CDBP04807,P21554,COc1ccc(/C=C/C)cc1,11855,0,0,no_match
+"1,8-cineole",DRD1,protein:CDBP04812,P21728,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,2030,0,0,no_match
 absinthin,DRD1,protein:CDBP04812,P21728,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,2030,0,0,no_match
 alpha-pinene,DRD1,protein:CDBP04812,P21728,CC1=CC[C@@H]2C[C@H]1C2(C)C,2030,0,0,no_match
 alpha-pinene,DRD1,protein:CDBP04812,P21728,CC1=CC[C@H]2CC1C2(C)C,2030,0,0,no_match
@@ -271,6 +279,7 @@ pinocamphone,DRD1,protein:CDBP04812,P21728,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,203
 rosmarinic acid,DRD1,protein:CDBP04812,P21728,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,2030,0,0,no_match
 spathulenol,DRD1,protein:CDBP04812,P21728,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,2030,0,0,no_match
 trans-anethole,DRD1,protein:CDBP04812,P21728,COc1ccc(/C=C/C)cc1,2030,0,0,no_match
+"1,8-cineole",HTR2A,protein:CDBP02043,P28223,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,9535,0,0,no_match
 absinthin,HTR2A,protein:CDBP02043,P28223,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,9535,0,0,no_match
 alpha-pinene,HTR2A,protein:CDBP02043,P28223,CC1=CC[C@@H]2C[C@H]1C2(C)C,9535,0,0,no_match
 alpha-pinene,HTR2A,protein:CDBP02043,P28223,CC1=CC[C@H]2CC1C2(C)C,9535,0,0,no_match
@@ -305,6 +314,7 @@ pinocamphone,HTR2A,protein:CDBP02043,P28223,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,95
 rosmarinic acid,HTR2A,protein:CDBP02043,P28223,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,9535,0,0,no_match
 spathulenol,HTR2A,protein:CDBP02043,P28223,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,9535,0,0,no_match
 trans-anethole,HTR2A,protein:CDBP02043,P28223,COc1ccc(/C=C/C)cc1,9535,0,0,no_match
+"1,8-cineole",HTR2C,protein:CDBP02060,P28335,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,7160,0,0,no_match
 absinthin,HTR2C,protein:CDBP02060,P28335,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,7160,0,0,no_match
 alpha-pinene,HTR2C,protein:CDBP02060,P28335,CC1=CC[C@@H]2C[C@H]1C2(C)C,7160,0,0,no_match
 alpha-pinene,HTR2C,protein:CDBP02060,P28335,CC1=CC[C@H]2CC1C2(C)C,7160,0,0,no_match
@@ -339,6 +349,7 @@ pinocamphone,HTR2C,protein:CDBP02060,P28335,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,71
 rosmarinic acid,HTR2C,protein:CDBP02060,P28335,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,7160,0,0,no_match
 spathulenol,HTR2C,protein:CDBP02060,P28335,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,7160,0,0,no_match
 trans-anethole,HTR2C,protein:CDBP02060,P28335,COc1ccc(/C=C/C)cc1,7160,0,0,no_match
+"1,8-cineole",SLC6A4,protein:CDBP01822,P31645,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,28190,0,0,no_match
 absinthin,SLC6A4,protein:CDBP01822,P31645,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,28190,0,0,no_match
 alpha-pinene,SLC6A4,protein:CDBP01822,P31645,CC1=CC[C@@H]2C[C@H]1C2(C)C,28190,0,0,no_match
 alpha-pinene,SLC6A4,protein:CDBP01822,P31645,CC1=CC[C@H]2CC1C2(C)C,28190,0,0,no_match
@@ -373,6 +384,7 @@ pinocamphone,SLC6A4,protein:CDBP01822,P31645,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,2
 rosmarinic acid,SLC6A4,protein:CDBP01822,P31645,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,28190,0,0,no_match
 spathulenol,SLC6A4,protein:CDBP01822,P31645,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,28190,0,0,no_match
 trans-anethole,SLC6A4,protein:CDBP01822,P31645,COc1ccc(/C=C/C)cc1,28190,0,0,no_match
+"1,8-cineole",HTR7,protein:CDBP01867,P34969,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,3795,0,0,no_match
 absinthin,HTR7,protein:CDBP01867,P34969,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,3795,0,0,no_match
 alpha-pinene,HTR7,protein:CDBP01867,P34969,CC1=CC[C@@H]2C[C@H]1C2(C)C,3795,0,0,no_match
 alpha-pinene,HTR7,protein:CDBP01867,P34969,CC1=CC[C@H]2CC1C2(C)C,3795,0,0,no_match
@@ -407,6 +419,7 @@ pinocamphone,HTR7,protein:CDBP01867,P34969,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,379
 rosmarinic acid,HTR7,protein:CDBP01867,P34969,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,3795,0,0,no_match
 spathulenol,HTR7,protein:CDBP01867,P34969,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,3795,0,0,no_match
 trans-anethole,HTR7,protein:CDBP01867,P34969,COc1ccc(/C=C/C)cc1,3795,0,0,no_match
+"1,8-cineole",OPRM1,protein:CDBP02036,P35372,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,8740,0,0,no_match
 absinthin,OPRM1,protein:CDBP02036,P35372,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,8740,0,0,no_match
 alpha-pinene,OPRM1,protein:CDBP02036,P35372,CC1=CC[C@@H]2C[C@H]1C2(C)C,8740,0,0,no_match
 alpha-pinene,OPRM1,protein:CDBP02036,P35372,CC1=CC[C@H]2CC1C2(C)C,8740,0,0,no_match
@@ -441,6 +454,7 @@ pinocamphone,OPRM1,protein:CDBP02036,P35372,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,87
 rosmarinic acid,OPRM1,protein:CDBP02036,P35372,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,8740,0,0,no_match
 spathulenol,OPRM1,protein:CDBP02036,P35372,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,8740,0,0,no_match
 trans-anethole,OPRM1,protein:CDBP02036,P35372,COc1ccc(/C=C/C)cc1,8740,0,0,no_match
+"1,8-cineole",HTR3A,protein:CDBP02156,P46098,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,4050,0,0,no_match
 absinthin,HTR3A,protein:CDBP02156,P46098,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,4050,0,0,no_match
 alpha-pinene,HTR3A,protein:CDBP02156,P46098,CC1=CC[C@@H]2C[C@H]1C2(C)C,4050,0,0,no_match
 alpha-pinene,HTR3A,protein:CDBP02156,P46098,CC1=CC[C@H]2CC1C2(C)C,4050,0,0,no_match
@@ -475,6 +489,7 @@ pinocamphone,HTR3A,protein:CDBP02156,P46098,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,40
 rosmarinic acid,HTR3A,protein:CDBP02156,P46098,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,4050,0,0,no_match
 spathulenol,HTR3A,protein:CDBP02156,P46098,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,4050,0,0,no_match
 trans-anethole,HTR3A,protein:CDBP02156,P46098,COc1ccc(/C=C/C)cc1,4050,0,0,no_match
+"1,8-cineole",GABRA2,protein:CDBP03413,P47869,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,155,0,0,no_match
 absinthin,GABRA2,protein:CDBP03413,P47869,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,155,0,0,no_match
 alpha-pinene,GABRA2,protein:CDBP03413,P47869,CC1=CC[C@@H]2C[C@H]1C2(C)C,155,0,0,no_match
 alpha-pinene,GABRA2,protein:CDBP03413,P47869,CC1=CC[C@H]2CC1C2(C)C,155,0,0,no_match
@@ -509,6 +524,7 @@ pinocamphone,GABRA2,protein:CDBP03413,P47869,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,1
 rosmarinic acid,GABRA2,protein:CDBP03413,P47869,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,155,0,0,no_match
 spathulenol,GABRA2,protein:CDBP03413,P47869,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,155,0,0,no_match
 trans-anethole,GABRA2,protein:CDBP03413,P47869,COc1ccc(/C=C/C)cc1,155,0,0,no_match
+"1,8-cineole",GABRB2,protein:CDBP03419,P47870,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,0,0,0,no_match
 absinthin,GABRB2,protein:CDBP03419,P47870,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,0,0,0,no_match
 alpha-pinene,GABRB2,protein:CDBP03419,P47870,CC1=CC[C@@H]2C[C@H]1C2(C)C,0,0,0,no_match
 alpha-pinene,GABRB2,protein:CDBP03419,P47870,CC1=CC[C@H]2CC1C2(C)C,0,0,0,no_match
@@ -543,6 +559,7 @@ pinocamphone,GABRB2,protein:CDBP03419,P47870,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,0
 rosmarinic acid,GABRB2,protein:CDBP03419,P47870,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,0,0,0,no_match
 spathulenol,GABRB2,protein:CDBP03419,P47870,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,0,0,0,no_match
 trans-anethole,GABRB2,protein:CDBP03419,P47870,COc1ccc(/C=C/C)cc1,0,0,0,no_match
+"1,8-cineole",GRIN1,protein:CDBP01515,Q05586,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,560,0,0,no_match
 absinthin,GRIN1,protein:CDBP01515,Q05586,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,560,0,0,no_match
 alpha-pinene,GRIN1,protein:CDBP01515,Q05586,CC1=CC[C@@H]2C[C@H]1C2(C)C,560,0,0,no_match
 alpha-pinene,GRIN1,protein:CDBP01515,Q05586,CC1=CC[C@H]2CC1C2(C)C,560,0,0,no_match
@@ -577,6 +594,7 @@ pinocamphone,GRIN1,protein:CDBP01515,Q05586,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,56
 rosmarinic acid,GRIN1,protein:CDBP01515,Q05586,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,560,0,0,no_match
 spathulenol,GRIN1,protein:CDBP01515,Q05586,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,560,0,0,no_match
 trans-anethole,GRIN1,protein:CDBP01515,Q05586,COc1ccc(/C=C/C)cc1,560,0,0,no_match
+"1,8-cineole",TRPM8,protein:CDBP01847,Q7Z2W7,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,5910,0,0,no_match
 absinthin,TRPM8,protein:CDBP01847,Q7Z2W7,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,5910,0,0,no_match
 alpha-pinene,TRPM8,protein:CDBP01847,Q7Z2W7,CC1=CC[C@@H]2C[C@H]1C2(C)C,5910,0,0,no_match
 alpha-pinene,TRPM8,protein:CDBP01847,Q7Z2W7,CC1=CC[C@H]2CC1C2(C)C,5910,0,0,no_match
@@ -611,6 +629,7 @@ pinocamphone,TRPM8,protein:CDBP01847,Q7Z2W7,C[C@@H]1[C@H]2C[C@H](CC1=O)C2(C)C,59
 rosmarinic acid,TRPM8,protein:CDBP01847,Q7Z2W7,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2ccc(O)c(O)c2,5910,0,0,no_match
 spathulenol,TRPM8,protein:CDBP01847,Q7Z2W7,CC1(O)CCC2C1C3C(CCC2=C)C3(C)C,5910,0,0,no_match
 trans-anethole,TRPM8,protein:CDBP01847,Q7Z2W7,COc1ccc(/C=C/C)cc1,5910,0,0,no_match
+"1,8-cineole",TRPV1,protein:CDBP01848,Q8NER1,C[C@@]12CC[C@@H](CC1)C(C)(C)O2,23950,0,0,no_match
 absinthin,TRPV1,protein:CDBP01848,Q8NER1,C[C@H]1[C@@H]2CC[C@](C)(O)[C@@H]3[C@H]4[C@H]5C=C(C)[C@@]6([C@H]7OC(=O)[C@@H](C)[C@@H]7CC[C@](C)(O)[C@@H]56)[C@H]4C(=C3[C@H]2OC1=O)C,23950,0,0,no_match
 alpha-pinene,TRPV1,protein:CDBP01848,Q8NER1,CC1=CC[C@@H]2C[C@H]1C2(C)C,23950,0,0,no_match
 alpha-pinene,TRPV1,protein:CDBP01848,Q8NER1,CC1=CC[C@H]2CC1C2(C)C,23950,0,0,no_match

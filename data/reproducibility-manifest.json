@@ -13,14 +13,14 @@
   },
   "sha256": {
     "data/absinthe-compounds.csv": "e7462c456d444bc311a879bec8043d99bff171c3bd4e85b5e5c6d23e541af3a5",
-    "data/terpedia-resolved-structure-records.csv": "f44005e3ba87c0c033dbca31f886c6381381d8f57006fe84c247124265ed3f51",
-    "data/terpedia-identity-audit.csv": "2d96da5631fd515376b7a3da4f3e60b8bf0ffa989b62a8cb2623aa566b477f73",
+    "data/terpedia-resolved-structure-records.csv": "2f5e9f615bb447c45921ebb29a0c9c01ee1e957f20c6df413c528e8e7ae0e333",
+    "data/terpedia-identity-audit.csv": "cbf20c89fd729a286ae61fbf7e3dac53069ae4c0343c44378fe96a2b7a916fed",
     "data/sair-protein-crosswalk.csv": "b47a43df519366bc1fdc8ac410e4676da5c7ac47aea3413c9cd7f1df6b696400",
-    "data/sair-19-target-parquet-join.csv": "e26f5dbee43490e7f34576f0c21b2d76e4eaaae8c7b30ac71d03a5b0f69b67f9",
-    "data/sair-human-panel-coverage.csv": "676cd9762fcaf8bb423fc5e4a7ef5143fe190af1135710f80693565d7aca4252",
+    "data/sair-19-target-parquet-join.csv": "fdc9e698ed12cc52f9b0460bf47117e48bf38840e4e979d97ecd4dc06bea09b6",
+    "data/sair-human-panel-coverage.csv": "932d7e709b37d04249792f3930c64076cf3c2c712283b21a9ffa10f5dab0a47f",
     "data/receptor-interactome.csv": "54e6001d177723bfa010e872c67102ab82f582b9b713b7fb56152b5e5e62dfaf",
     "data/human-neural-receptor-panel.csv": "33ae25cfaa9ef3d6be1fc1b26a18c74893e6ead528d9bde698d69e1fc82939f3",
-    "scripts/join_sair_parquet.py": "c40f6d084380f61e188d98aec4a856a90e4c0a997c0b32878f2e70c2c3e728ab",
-    "scripts/build_sair_coverage.py": "dee04b89e9c838735615550531a9d073bd775d8770b95e8b355c71ac3eb2d30b"
+    "scripts/join_sair_parquet.py": "a009681438c4896c728d414a1534e6b50677773e3990f034829dc5f9e030fb33",
+    "scripts/build_sair_coverage.py": "4f89b84b877e5703c60c6f0d507ae07f7a60999036732d1471c45d7be2de44f0"
   }
 }

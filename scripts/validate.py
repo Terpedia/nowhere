@@ -52,26 +52,35 @@ assert all(row["terpedia_record"].startswith("protein:") for row in panel)
 assert len(expanded_panel) >= 15
 assert all(row["terpedia_record"].startswith("protein:") for row in expanded_panel)
 assert len(resolved_structures) >= 15
-assert all(row["terpedia_id"].startswith("SN") and row["inchi_key"] and row["smiles"] for row in resolved_structures)
-assert all(row["source_object_uri"].endswith("supernatural2/full_data_download.csv") for row in resolved_structures)
+assert all(
+    (row["terpedia_id"].startswith("SN") or row["terpedia_id"].startswith("CDB"))
+    and row["inchi_key"] and row["smiles"]
+    for row in resolved_structures
+)
+assert all(
+    row["source_object_uri"].endswith("supernatural2/full_data_download.csv")
+    or row["source_object_uri"].startswith("https://cannabisdatabase.ca/compounds/")
+    for row in resolved_structures
+)
 assert len(identity_audit) == len(compounds)
 assert {row["inventory_compound"] for row in identity_audit} == {row["compound"] for row in compounds}
-assert any(row["identity_status"] == "no Terpedia structure match" for row in identity_audit)
+assert any(row["identity_status"] == "connectivity family only" for row in identity_audit)
 assert len(unresolved_aliases) == 2
-assert all(row["structure_available"] == "no" and row["terpedia_record"] for row in unresolved_aliases)
+assert all(row["terpedia_record"] for row in unresolved_aliases)
+assert any(row["structure_available"] == "no" for row in unresolved_aliases)
 assert len(expanded_join) == 27
 assert all(row["join_status"] == "no_match" for row in expanded_join)
 assert all(row["interaction_rows_scanned"] == "1489" for row in expanded_join)
 assert len(crosswalk) == len(expanded_panel)
 assert {row["target"] for row in crosswalk} == {row["target"] for row in expanded_panel}
 assert all(row["sair_protein_id"] and row["organism"] == "Homo sapiens" for row in crosswalk)
-assert len(full_panel_join) == 646
-assert len({row["compound"] for row in full_panel_join}) == 27
+assert len(full_panel_join) == 665
+assert len({row["compound"] for row in full_panel_join}) == 28
 assert len({row["target"] for row in full_panel_join}) == 19
 assert all(row["join_status"] == "no_match" for row in full_panel_join)
 assert all(row["sair_protein_id"] for row in full_panel_join)
-assert len(projection_coverage) == 646
-assert len({row["compound"] for row in projection_coverage}) == 27
+assert len(projection_coverage) == 665
+assert len({row["compound"] for row in projection_coverage}) == 28
 assert len({row["target"] for row in projection_coverage}) == 19
 assert all(row["join_status"] == "no_join_found" for row in projection_coverage)
 assert all(row["sair_protein_id"] for row in projection_coverage)

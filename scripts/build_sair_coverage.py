@@ -61,7 +61,7 @@ def main():
     ]
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         for structure in structures:
             compound = structure.get("inventory_compound") or structure.get("compound", "")

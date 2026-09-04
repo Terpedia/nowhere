@@ -3,7 +3,7 @@ alpha-pinene,stereoisomer family matched,SN0113697;SN0113697-01;SN0113697-02;SN0
 beta-pinene,stereoisomer family matched,SN0419253;SN0419253-01;SN0419253-02;SN0419253-03;SN0419253-04,5,InChIKey connectivity block,COA name does not specify the enantiomer; preserve candidates separately
 beta-myrcene,structure matched label discrepancy,SN0364992,1,exact InChIKey,Terpedia labels the matched structure alpha-myrcene; do not silently rename it beta-myrcene
 limonene,stereoisomer family matched,SN0434098;SN0434098-01;SN0434098-02,3,InChIKey connectivity block,COA name does not specify the enantiomer; preserve candidates separately
-"1,8-cineole",no Terpedia structure match,,none,Common-name candidate was not found in the inspected SuperNatural II release
+"1,8-cineole",exact structure resolved,CDB000189,1,exact InChIKey and SMILES from Terpedia CannabisDB compound page,"Terpedia Eucalyptol/CDB000189 page resolves the exact achiral 1,8-cineole structure; SuperNatural II did not contain the record"
 gamma-terpinene,structure matched label discrepancy,SN0452646,1,exact InChIKey,Terpedia labels the matched structure alpha-terpinene; retain the source label and identity caveat
 linalool,stereoisomers matched,SN0042830;SN0042830-01;SN0042830-02,3,exact and connectivity InChIKey,COA name is non-isomeric; both enantiomers are retained
 alpha-thujone,exact isomer resolved,SN0378958-02,1,exact InChIKey,Terpedia thujone record selected for the alpha-thujone evidence row

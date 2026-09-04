@@ -142,7 +142,7 @@ def main() -> int:
             "compatible_sair_rows", "isomeric_match_rows",
             "nonisomeric_match_rows", "join_status",
         ]
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         for target_key, target in sorted(targets.items()):
             iso_count = len(matched_isomeric[target_key])
