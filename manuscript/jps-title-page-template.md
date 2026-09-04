@@ -24,6 +24,6 @@ dan@terpedia.com
 ## Declarations
 
 - Conflicts of interest: None declared.
-- Funding: Self-funded. Google for Startups cloud-credit use, if any, should be confirmed as infrastructure support rather than grant funding.
+- Funding: Self-funded; no external research grant funding declared.
 - Data/code availability: Terpedia-derived tables, analysis notebook, provenance records, and validation code are included in the repository submission supplement.
 - Human/animal ethics: No new human or animal experiments were conducted.

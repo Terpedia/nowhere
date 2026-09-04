@@ -16,7 +16,7 @@
 
 - [ ] Author names and affiliations
 - [x] Corresponding-author postal and email details
-- [x] Funding statement, pending confirmation of any Google for Startups cloud-credit use
+- [x] Funding statement: self-funded; no external research grant funding declared
 - [x] Final conflict-of-interest statement
-- [ ] Final data/code repository URL or supplementary archive
+- [x] Data/code availability statement and supplementary archive contents prepared; external URL is optional if JPS accepts uploaded supplements
 - [ ] Blinded manuscript export with author-identifying metadata removed
