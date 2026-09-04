@@ -4,6 +4,7 @@
 
 - [x] Critical Review Article framing
 - [x] Synchronized manuscript, cover-letter, and title-page title
+- [x] APA author–date in-text citations and alphabetized reference list aligned to published JPS articles
 - [x] Evidence-selection summary with explicit non-systematic-review boundary
 - [x] Exact search routes and eligibility rules in `docs/jps-search-log.md`
 - [x] Source-level evidence table in `data/source-level-evidence.csv`
