@@ -17,6 +17,7 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 - `data/human-neural-receptor-panel.csv` — expanded 19-target Terpedia panel; the five-target file remains the narrow primary comparator set.
 - `data/sair-protein-crosswalk.csv` — explicit Terpedia protein-record to UniProt accession crosswalk used for the SAIR parquet.
 - `data/sair-19-target-parquet-join.csv` — complete 19-target parquet join result (646 compound-target rows).
+- `data/sair-human-panel-coverage.csv` — namespace-correct 19-target interaction-projection coverage matrix (646 compound-target rows).
 - `data/receptor-interactome.csv` — initial evidence-qualified compound–receptor edges.
 - `data/sair-release-metadata.json` — SAIR parquet retrieval, schema, row-count, and structure-join checkpoint.
 - `data/sair-canonical-join-results.csv` — seven-target canonical and non-isomeric join results, including the 18,145-row compatible-candidate scan.

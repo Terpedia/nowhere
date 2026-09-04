@@ -59,6 +59,7 @@ For the recovered interaction projection, generate the explicit compound-by-pane
 python3 scripts/build_sair_coverage.py \
   --structures data/terpedia-resolved-structure-records.csv \
   --panel data/human-neural-receptor-panel.csv \
+  --crosswalk data/sair-protein-crosswalk.csv \
   --interactions /tmp/sair-interactions.XXXXXX.csv \
   --output data/sair-human-panel-coverage.csv
 ```

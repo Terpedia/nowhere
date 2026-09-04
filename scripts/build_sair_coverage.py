@@ -22,6 +22,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--structures", type=Path, required=True)
     parser.add_argument("--panel", type=Path, required=True)
+    parser.add_argument("--crosswalk", type=Path, default=Path(__file__).parents[1] / "data" / "sair-protein-crosswalk.csv")
     parser.add_argument("--interactions", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
@@ -29,9 +30,17 @@ def main():
         raise SystemExit("build_sair_coverage.py requires rdkit")
 
     with args.structures.open(newline="") as handle:
-        structures = list(csv.DictReader(handle))
+        structures = []
+        seen_structures = set()
+        for row in csv.DictReader(handle):
+            key = (row.get("inventory_compound", row.get("compound", "")), row.get("smiles", ""))
+            if key not in seen_structures:
+                seen_structures.add(key)
+                structures.append(row)
     with args.panel.open(newline="") as handle:
         panel = list(csv.DictReader(handle))
+    with args.crosswalk.open(newline="") as handle:
+        crosswalk = {row["target"]: row["sair_protein_id"] for row in csv.DictReader(handle)}
     with args.interactions.open(newline="") as handle:
         interactions = list(csv.DictReader(handle))
 
@@ -46,7 +55,7 @@ def main():
 
     fields = [
         "compound", "structure_identifier", "compound_smiles", "target",
-        "receptor_record_id", "system", "target_source_release",
+        "receptor_record_id", "sair_protein_id", "system", "target_source_release",
         "sair_interaction_rows_scanned", "isomeric_match_count",
         "nonisomeric_match_count", "join_status", "interpretation",
     ]
@@ -61,7 +70,8 @@ def main():
             iso = canonical(smiles, True)
             noniso = canonical(smiles, False)
             for target in panel:
-                protein = target.get("terpedia_record") or target.get("receptor_record_id", "")
+                terp_protein = target.get("terpedia_record") or target.get("receptor_record_id", "")
+                protein = crosswalk.get(target.get("target", ""), "")
                 exact = indexed.get((protein, iso), [])
                 connectivity = [
                     row for row in indexed.get((protein, noniso, "noniso"), [])
@@ -73,7 +83,8 @@ def main():
                     "structure_identifier": identifier,
                     "compound_smiles": smiles,
                     "target": target.get("target", ""),
-                    "receptor_record_id": protein,
+                    "receptor_record_id": terp_protein,
+                    "sair_protein_id": protein,
                     "system": target.get("system", ""),
                     "target_source_release": target.get("source_release", ""),
                     "sair_interaction_rows_scanned": len(interactions),

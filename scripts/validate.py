@@ -24,6 +24,7 @@ identity_audit = read("terpedia-identity-audit.csv")
 expanded_join = read("sair-expanded-join-summary.csv")
 crosswalk = read("sair-protein-crosswalk.csv")
 full_panel_join = read("sair-19-target-parquet-join.csv")
+projection_coverage = read("sair-human-panel-coverage.csv")
 
 assert len(compounds) >= 20, "compound inventory unexpectedly short"
 assert len({row["compound"] for row in compounds}) == len(compounds), "duplicate compound"
@@ -63,4 +64,9 @@ assert len({row["compound"] for row in full_panel_join}) == 27
 assert len({row["target"] for row in full_panel_join}) == 19
 assert all(row["join_status"] == "no_match" for row in full_panel_join)
 assert all(row["sair_protein_id"] for row in full_panel_join)
+assert len(projection_coverage) == 646
+assert len({row["compound"] for row in projection_coverage}) == 27
+assert len({row["target"] for row in projection_coverage}) == 19
+assert all(row["join_status"] == "no_join_found" for row in projection_coverage)
+assert all(row["sair_protein_id"] for row in projection_coverage)
 print(f"validated {len(compounds)} compounds, {len(framework)} framework criteria, {len(identifiers)} identifiers, {len(panel)} primary and {len(expanded_panel)} expanded receptor targets, and {len(interactome)} interaction edges")
