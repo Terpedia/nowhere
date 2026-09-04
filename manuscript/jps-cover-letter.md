@@ -8,7 +8,7 @@ The manuscript addresses a persistent but poorly specified claim: whether absint
 
 Our central conclusion is deliberately evidence-bounded. Absinthe is plausibly psychoactive and may contain non-5-HT2A modulators, but the current record does not establish the joined chain of 5-HT2A activity, plausible CNS exposure, reproducible psychedelic phenomenology, and causal validation required for the classic psychedelic label. We believe this negative-but-falsifiable conclusion is relevant to the journal because it clarifies how psychedelic terminology should be applied to complex botanical-alcoholic preparations and identifies the decisive receptor, pharmacokinetic, mixture, and controlled-human experiments still needed.
 
-The manuscript is a critical review and evidence map, not a systematic review or meta-analysis. We provide an adapted PRISMA-style selection account, explicit evidence boundaries, a machine-readable 29-compound modulation map, and a reproducible Terpedia/SAIR structure-search record. No human or animal experiments were conducted for this article, and no clinical or therapeutic claim is made.
+The manuscript is a critical review and evidence map, not a systematic review or meta-analysis. We provide a structured evidence-selection summary, an exact search log, explicit evidence boundaries, a machine-readable 29-compound modulation map, and a reproducible Terpedia/SAIR structure-search record. No human or animal experiments were conducted for this article, and no clinical or therapeutic claim is made.
 
 This manuscript is original, is not under consideration elsewhere, and all authors have approved its submission. We have no conflicts of interest to declare.
 

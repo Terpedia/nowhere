@@ -29,6 +29,7 @@ crosswalk = read("sair-protein-crosswalk.csv")
 full_panel_join = read("sair-19-target-parquet-join.csv")
 projection_coverage = read("sair-human-panel-coverage.csv")
 panel_evidence = read("sair-human-panel-evidence-summary.csv")
+source_evidence = read("source-level-evidence.csv")
 manifest = json.loads((ROOT / "data" / "reproducibility-manifest.json").read_text())
 notebook = json.loads((ROOT / "notebooks" / "absinthe_terpedia_analysis.ipynb").read_text())
 
@@ -102,6 +103,9 @@ assert len(panel_evidence) == 19
 assert {row["target"] for row in panel_evidence} == {row["target"] for row in expanded_panel}
 assert all(row["source_object"] == "gs://sandboxaq-sair/sair.parquet" for row in panel_evidence)
 assert sum(int(row["parquet_rows"]) for row in panel_evidence) == 136025
+assert len(source_evidence) == 12
+assert {row["source_id"] for row in source_evidence} == {"T1", "T2", "L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L10"}
+assert all(row["source"] and row["principal_result"] and row["primary_limitation"] for row in source_evidence)
 assert manifest["release_date"] == "2026-09-03"
 assert len(manifest["sha256"]) == 10
 assert notebook["nbformat"] == 4

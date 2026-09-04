@@ -30,7 +30,12 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 - `data/terpedia-unresolved-aliases.csv` — Terpedia alias records found without exposed structure fields; not promoted into SAIR joins.
 - `docs/identity-resolution.md` — identity-resolution rules and the boundary between supplemental lookup and Terpedia adjudication.
 - `docs/coa-reconciliation.md` — explicit reconciliation of the 27-row COA with the current 29-compound analysis inventory.
+- `docs/jps-search-log.md` — exact discovery routes, eligibility rules, and accounting boundaries for the JPS critical review.
+- `data/source-level-evidence.csv` — source-by-source evidence and limitation table for the review bibliography.
 - `manuscript/receptor-interactome-report.md` — network visualization, interpretation, and limitations.
+- `manuscript/figure-1-evidence-map.mmd` — editable Figure 1 network source.
+- `manuscript/jps-cover-letter.md` — JPS cover letter draft.
+- `manuscript/jps-title-page-template.md` — separate JPS title-page template.
 - `manuscript/jps-cover-letter.md` — cover letter positioning the paper as a critical Review Article.
 - `manuscript/jps-title-page-template.md` — separate title-page template for JPS double-blind submission.
 - `notebooks/absinthe_terpedia_analysis.ipynb` — Colab-compatible Terpedia-only methods and results notebook.
