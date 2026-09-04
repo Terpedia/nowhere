@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Small integrity check for the initial Absinthe research tables."""
 import csv
+import hashlib
 import json
 from pathlib import Path
 
@@ -33,6 +34,10 @@ source_evidence = read("source-level-evidence.csv")
 manifest = json.loads((ROOT / "data" / "reproducibility-manifest.json").read_text())
 notebook = json.loads((ROOT / "notebooks" / "absinthe_terpedia_analysis.ipynb").read_text())
 
+for relative_path, expected_sha256 in manifest["sha256"].items():
+    actual_sha256 = hashlib.sha256((ROOT / relative_path).read_bytes()).hexdigest()
+    assert actual_sha256 == expected_sha256, f"manifest hash mismatch: {relative_path}"
+
 assert len(compounds) >= 20, "compound inventory unexpectedly short"
 assert len({row["compound"] for row in compounds}) == len(compounds), "duplicate compound"
 for row in compounds:
@@ -43,18 +48,19 @@ assert {"primary target", "brain exposure", "phenomenology", "classification"} <
     row["criterion"] for row in framework
 }
 assert {"thujone", "limonene", "linalool"} <= {row["terpedia_label"] for row in identifiers}
-assert {"alpha-thujone", "trans-anethole", "linalool"} <= {row["compound"] for row in interactome}
+assert {"alpha-thujone", "trans-anethole", "linalool", "absinthin"} <= {row["compound"] for row in interactome}
 assert len(modulation_map) == len(compounds)
 assert {row["compound"] for row in modulation_map} == {row["compound"] for row in compounds}
 assert {row["modulation_level"] for row in modulation_map} <= {
-    "directly characterized", "preclinical candidate", "unresolved", "unestablished", "unassessed"
+    "directly characterized", "isomer-qualified", "preclinical candidate", "unresolved", "unestablished", "unassessed"
 }
 assert {row["evidence_status"] for row in modulation_map} >= {
-    "supported for GABA-A; HTR2A unestablished", "supported for TRPA1; HTR2A unestablished",
-    "candidate", "unresolved", "unassessed"
+    "supported for GABA-A and TAS2R14; HTR2A unestablished", "supported for TRPA1; HTR2A unestablished",
+    "supported for TAS2R46; HTR2A unestablished", "candidate", "unresolved", "unassessed"
 }
 assert sum(row["modulation_level"] == "directly characterized" for row in modulation_map) == 3
-assert sum(row["modulation_level"] == "unassessed" for row in modulation_map) == 3
+assert sum(row["modulation_level"] == "isomer-qualified" for row in modulation_map) == 1
+assert sum(row["modulation_level"] == "unassessed" for row in modulation_map) == 2
 assert {"direct binding and functional electrophysiology", "no qualifying interaction located"} <= {
     row["evidence_class"] for row in interactome
 }
@@ -103,11 +109,11 @@ assert len(panel_evidence) == 19
 assert {row["target"] for row in panel_evidence} == {row["target"] for row in expanded_panel}
 assert all(row["source_object"] == "gs://sandboxaq-sair/sair.parquet" for row in panel_evidence)
 assert sum(int(row["parquet_rows"]) for row in panel_evidence) == 136025
-assert len(source_evidence) == 12
-assert {row["source_id"] for row in source_evidence} == {"T1", "T2", "L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L10"}
+assert len(source_evidence) == 18
+assert {row["source_id"] for row in source_evidence} == {"T1", "T2", "L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L10", "A1", "H1", "A2", "G1", "G2", "G3"}
 assert all(row["source"] and row["principal_result"] and row["primary_limitation"] for row in source_evidence)
 assert manifest["release_date"] == "2026-09-03"
-assert len(manifest["sha256"]) == 10
+assert len(manifest["sha256"]) == 13
 assert notebook["nbformat"] == 4
 assert len(notebook["cells"]) >= 10
 assert sum(cell["cell_type"] == "code" for cell in notebook["cells"]) >= 5

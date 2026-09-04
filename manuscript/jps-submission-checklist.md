@@ -14,9 +14,15 @@
 
 ## Author-supplied metadata before upload
 
-- [ ] Author names and affiliations
+- [x] Author names and affiliations supplied where available; Susan Trapp affiliation remains `[TO CONFIRM]`
+- [ ] Susan Trapp email, postal address, ORCID, and competing-interests statement
+- [x] Daniel C. McShan ORCID: `https://orcid.org/0000-0003-3880-1711`
 - [x] Corresponding-author postal and email details
-- [x] Funding statement: self-funded; no external research grant funding declared
-- [x] Final conflict-of-interest statement
+- [x] Funding statement: no specific funding was received for this work
+- [ ] Final conflict-of-interest statement for Susan Trapp (`[TO CONFIRM]`)
+- [x] CRediT roles recorded; Susan Trapp: Writing—review and editing only
+- [x] Acknowledgements statement prepared
 - [x] Data/code availability statement and supplementary archive contents prepared; external URL is optional if JPS accepts uploaded supplements
-- [ ] Blinded manuscript export with author-identifying metadata removed
+- [x] Blinded manuscript export with author-identifying metadata removed: `manuscript/jps-formatted/absinthe-jps-blinded-manuscript.docx`
+- [x] Separate title page: `manuscript/jps-formatted/absinthe-jps-title-page.docx`
+- [x] Cover letter: `manuscript/jps-formatted/absinthe-jps-cover-letter.docx`

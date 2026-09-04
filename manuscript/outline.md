@@ -2,7 +2,7 @@
 
 ## Provisional title
 
-**Is absinthe psychedelic? A Terpedia evidence map of psychedelic biochemistry, absinthe chemistry, and competing mechanisms**
+**Is absinthe a different kind of drunk—and is it psychedelic? A Terpedia evidence map of ethanol, thujone, and 5-HT2A pharmacology**
 
 ## Central question
 
@@ -30,4 +30,3 @@ Do absinthe's known constituents and preparation-level effects meet a defensible
 ## Minimum decisive experiment
 
 Use a chemically characterized absinthe preparation and an ethanol-matched control, quantify thujones and major volatiles, measure plasma exposure, and preregister a blinded battery containing validated subjective psychedelic measures plus physiological and cognitive outcomes. A positive result would still require evidence that effects track 5-HT2A activation rather than ethanol or toxicity.
-

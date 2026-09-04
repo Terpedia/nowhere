@@ -1,6 +1,6 @@
-# Is Terpedia's absinthe psychedelic?
+# Is absinthe a different kind of drunk—and is it psychedelic? | Terpedia evidence map
 
-Working repository for a journal paper on whether absinthe should be described as a psychedelic, using Terpedia's compound, analytical, and biomedical records.
+Working repository for a journal paper on whether absinthe produces a reproducibly different intoxication profile and whether that difference should be described as psychedelic, using Terpedia's compound, analytical, and biomedical records.
 
 ## Working position
 
@@ -23,11 +23,11 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 - `data/receptor-target-panel.csv` — initial prespecified receptor panel.
 - `data/human-neural-receptor-panel.csv` — expanded 19-target Terpedia panel; the five-target file remains the narrow primary comparator set.
 - `data/sair-protein-crosswalk.csv` — explicit Terpedia protein-record to UniProt accession crosswalk used for the SAIR parquet.
-- `data/sair-19-target-parquet-join.csv` — complete 19-target parquet join result (684 compound-target rows for all 29 represented compounds).
-- `data/sair-human-panel-coverage.csv` — namespace-correct 19-target interaction-projection coverage matrix (684 rows for all 29 represented compounds).
+- `data/sair-19-target-parquet-join.csv` — complete 19-target parquet join result (684 structure-target combinations: 36 structure records × 19 targets).
+- `data/sair-human-panel-coverage.csv` — namespace-correct 19-target interaction-projection coverage matrix (684 structure-target combinations from 36 structure records).
 - `data/sair-human-panel-evidence-summary.csv` — SAIR assay/potency/pIC50/docking-field availability by human target.
 - `data/reproducibility-manifest.json` — source-object references and SHA-256 hashes for the release inputs, outputs, and workflows.
-- `data/receptor-interactome.csv` — initial evidence-qualified compound–receptor edges.
+- `data/receptor-interactome.csv` — initial evidence-qualified compound–human-target edges.
 - `data/psychedelic-modulation-map.csv` — one-row-per-compound modulation interpretation across the full 29-compound inventory, with evidence boundaries.
 - `data/sair-release-metadata.json` — SAIR parquet retrieval, schema, row-count, and structure-join checkpoint.
 - `data/sair-canonical-join-results.csv` — seven-target canonical and non-isomeric join results, including the 18,145-row compatible-candidate scan.
