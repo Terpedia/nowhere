@@ -19,7 +19,7 @@ anisaldehyde,exact structure resolved,SN0478525,1,exact InChIKey,Exact Terpedia 
 trans-anethole,exact E candidate matched,SN0335873;SN0335873-02,2,exact stereochemical InChIKey,Terpedia label is anethole with E-configured structure
 geranial,exact E candidate matched,SN0419383;SN0419383-01,2,exact stereochemical InChIKey,Terpedia source labels the structure alpha-citral
 neral,exact Z candidate matched,SN0419383-02,1,exact stereochemical InChIKey,Terpedia source uses systematic citral naming
-trans-sabinyl acetate,connectivity family only,SN0281201;SN0281201-01;SN0281201-02;SN0281201-03;SN0281201-04;SN0281201-05,6,InChIKey connectivity block,No exact candidate stereochemical InChIKey in Terpedia release
+trans-sabinyl acetate,exact stereochemical candidate,JEAabhacu2011Lea,1,Terpedia EssoilDB systematic name plus supplemental exact structure crosswalk,"Terpedia gives the exact (1R,3S) systematic name; SMILES and InChIKey are retained as supplemental structure crosswalk fields pending native structure export"
 methyleugenol,exact structure resolved,SN0483473,1,exact InChIKey,Terpedia labels the structure methyl eugenol
 beta-caryophyllene,exact stereoisomer matched,SN0251863-14,1,exact stereochemical InChIKey,Terpedia parent family contains the matched beta-caryophyllene structure
 gamma-himachalene,connectivity family only,SN0295822;SN0295822-01;SN0295822-02;SN0295822-03,4,InChIKey connectivity block,Retain the exact source label gamma-himachalene only for the matching source row
