@@ -146,8 +146,14 @@ def add_table(doc, rows):
 def build_markdown(src, out_path, blinded=True):
     doc = Document()
     configure(doc)
+    # Keep the blinded export free of identifying document metadata.
+    doc.core_properties.author = ""
+    doc.core_properties.title = ""
+    doc.core_properties.subject = ""
+    doc.core_properties.keywords = ""
     lines = Path(src).read_text().splitlines()
     i = 0
+    in_references = False
     while i < len(lines):
         line = lines[i]
         if not line.strip():
@@ -167,6 +173,7 @@ def build_markdown(src, out_path, blinded=True):
         if heading:
             level = min(len(heading.group(1)), 3)
             text = re.sub(r"[`*_]", "", heading.group(2))
+            in_references = text.lower() == "references"
             p = doc.add_paragraph(style="Title" if level == 1 and not any(p.style.name == "Title" for p in doc.paragraphs) else f"Heading {level}")
             add_inline(p, text)
             i += 1
@@ -184,6 +191,9 @@ def build_markdown(src, out_path, blinded=True):
             i += 1
             continue
         p = doc.add_paragraph()
+        if in_references:
+            p.paragraph_format.left_indent = Inches(0.35)
+            p.paragraph_format.first_line_indent = Inches(-0.35)
         add_inline(p, line)
         i += 1
     doc.save(out_path)
@@ -191,6 +201,10 @@ def build_markdown(src, out_path, blinded=True):
 def build_metadata(src, out_path, title_page=False):
     doc = Document()
     configure(doc)
+    doc.core_properties.author = ""
+    doc.core_properties.title = ""
+    doc.core_properties.subject = ""
+    doc.core_properties.keywords = ""
     if title_page:
         normal = doc.styles["Normal"]
         normal.font.size = Pt(11)
