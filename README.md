@@ -29,6 +29,7 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 - `data/terpedia-identity-audit.csv` — full 29-compound identity audit, including source-label discrepancies and unresolved stereochemistry.
 - `data/terpedia-unresolved-aliases.csv` — Terpedia alias records found without exposed structure fields; not promoted into SAIR joins.
 - `docs/identity-resolution.md` — identity-resolution rules and the boundary between supplemental lookup and Terpedia adjudication.
+- `docs/coa-reconciliation.md` — explicit reconciliation of the 27-row COA with the current 29-compound analysis inventory.
 - `manuscript/receptor-interactome-report.md` — network visualization, interpretation, and limitations.
 - `scripts/validate.py` — lightweight integrity checks for the data tables.
 - `scripts/join_sair_interactions.py` — reproducible RDKit canonical-structure join against the Terpedia SAIR interaction CSV.

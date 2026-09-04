@@ -1,4 +1,4 @@
-# Initial absinthe–human terpene receptor interactome
+# Absinthe–human-target terpene receptor interactome
 
 ## Scope
 

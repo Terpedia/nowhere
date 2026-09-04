@@ -18,7 +18,7 @@
     "data/sair-protein-crosswalk.csv": "b47a43df519366bc1fdc8ac410e4676da5c7ac47aea3413c9cd7f1df6b696400",
     "data/sair-19-target-parquet-join.csv": "ea56ee442c21854f926e3373d8d5a9e20173bde922d0fb1388402f76310ffdf9",
     "data/sair-human-panel-coverage.csv": "a1cb7aef4182377168e281383a55168f415a284610af0ea8c2c00dbf8b7fc6f4",
-    "data/receptor-interactome.csv": "54e6001d177723bfa010e872c67102ab82f582b9b713b7fb56152b5e5e62dfaf",
+    "data/receptor-interactome.csv": "b5e44dddc195e2e6fc571aaefe6ca7798ccaf6623b9a0dcaa9560b186b9536a7",
     "data/human-neural-receptor-panel.csv": "33ae25cfaa9ef3d6be1fc1b26a18c74893e6ead528d9bde698d69e1fc82939f3",
     "scripts/join_sair_parquet.py": "a009681438c4896c728d414a1534e6b50677773e3990f034829dc5f9e030fb33",
     "scripts/build_sair_coverage.py": "4f89b84b877e5703c60c6f0d507ae07f7a60999036732d1471c45d7be2de44f0"
