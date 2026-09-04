@@ -30,6 +30,7 @@ full_panel_join = read("sair-19-target-parquet-join.csv")
 projection_coverage = read("sair-human-panel-coverage.csv")
 panel_evidence = read("sair-human-panel-evidence-summary.csv")
 manifest = json.loads((ROOT / "data" / "reproducibility-manifest.json").read_text())
+notebook = json.loads((ROOT / "notebooks" / "absinthe_terpedia_analysis.ipynb").read_text())
 
 assert len(compounds) >= 20, "compound inventory unexpectedly short"
 assert len({row["compound"] for row in compounds}) == len(compounds), "duplicate compound"
@@ -103,4 +104,8 @@ assert all(row["source_object"] == "gs://sandboxaq-sair/sair.parquet" for row in
 assert sum(int(row["parquet_rows"]) for row in panel_evidence) == 136025
 assert manifest["release_date"] == "2026-09-03"
 assert len(manifest["sha256"]) == 10
+assert notebook["nbformat"] == 4
+assert len(notebook["cells"]) >= 10
+assert sum(cell["cell_type"] == "code" for cell in notebook["cells"]) >= 5
+assert any("Terpedia" in "".join(cell.get("source", [])) for cell in notebook["cells"])
 print(f"validated {len(compounds)} compounds, {len(framework)} framework criteria, {len(identifiers)} identifiers, {len(panel)} primary and {len(expanded_panel)} expanded receptor targets, and {len(interactome)} interaction edges")

@@ -31,6 +31,9 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 - `docs/identity-resolution.md` — identity-resolution rules and the boundary between supplemental lookup and Terpedia adjudication.
 - `docs/coa-reconciliation.md` — explicit reconciliation of the 27-row COA with the current 29-compound analysis inventory.
 - `manuscript/receptor-interactome-report.md` — network visualization, interpretation, and limitations.
+- `manuscript/jps-cover-letter.md` — cover letter positioning the paper as a critical Review Article.
+- `manuscript/jps-title-page-template.md` — separate title-page template for JPS double-blind submission.
+- `notebooks/absinthe_terpedia_analysis.ipynb` — Colab-compatible Terpedia-only methods and results notebook.
 - `scripts/validate.py` — lightweight integrity checks for the data tables.
 - `scripts/join_sair_interactions.py` — reproducible RDKit canonical-structure join against the Terpedia SAIR interaction CSV.
 - `scripts/join_sair_parquet.py` — reproducible DuckDB/RDKit compound-by-panel join against the full SAIR structure parquet.
