@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Small integrity check for the initial Absinthe research tables."""
 import csv
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,6 +28,7 @@ crosswalk = read("sair-protein-crosswalk.csv")
 full_panel_join = read("sair-19-target-parquet-join.csv")
 projection_coverage = read("sair-human-panel-coverage.csv")
 panel_evidence = read("sair-human-panel-evidence-summary.csv")
+manifest = json.loads((ROOT / "data" / "reproducibility-manifest.json").read_text())
 
 assert len(compounds) >= 20, "compound inventory unexpectedly short"
 assert len({row["compound"] for row in compounds}) == len(compounds), "duplicate compound"
@@ -77,4 +79,6 @@ assert len(panel_evidence) == 19
 assert {row["target"] for row in panel_evidence} == {row["target"] for row in expanded_panel}
 assert all(row["source_object"] == "gs://sandboxaq-sair/sair.parquet" for row in panel_evidence)
 assert sum(int(row["parquet_rows"]) for row in panel_evidence) == 136025
+assert manifest["release_date"] == "2026-09-03"
+assert len(manifest["sha256"]) == 10
 print(f"validated {len(compounds)} compounds, {len(framework)} framework criteria, {len(identifiers)} identifiers, {len(panel)} primary and {len(expanded_panel)} expanded receptor targets, and {len(interactome)} interaction edges")

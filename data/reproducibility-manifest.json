@@ -1,0 +1,26 @@
+{
+  "release_date": "2026-09-03",
+  "validation_command": "python3 scripts/validate.py",
+  "primary_workflows": [
+    "scripts/join_sair_parquet.py",
+    "scripts/build_sair_coverage.py",
+    "scripts/join_sair_interactions.py"
+  ],
+  "source_objects": {
+    "absinthe_structure_source": "gs://terpedia-knowledge-raw/raw/terport-data/objects/4d9e840a8a95f1f6c82a94b7d018b3492227c85257c42efd75330e7a408df0fb/supernatural2/full_data_download.csv",
+    "sair_parquet": "gs://sandboxaq-sair/sair.parquet",
+    "sair_interaction_projection": "gs://terpedia-knowledge-raw/raw/terport-data/objects/cba55f60e6505b06aac9cb78b3340a5adeb3dfe8bef5bb9485a44cfeef4ba42e/sair/protein_terpene_interactions.csv"
+  },
+  "sha256": {
+    "data/absinthe-compounds.csv": "e7462c456d444bc311a879bec8043d99bff171c3bd4e85b5e5c6d23e541af3a5",
+    "data/terpedia-resolved-structure-records.csv": "f44005e3ba87c0c033dbca31f886c6381381d8f57006fe84c247124265ed3f51",
+    "data/terpedia-identity-audit.csv": "2d96da5631fd515376b7a3da4f3e60b8bf0ffa989b62a8cb2623aa566b477f73",
+    "data/sair-protein-crosswalk.csv": "b47a43df519366bc1fdc8ac410e4676da5c7ac47aea3413c9cd7f1df6b696400",
+    "data/sair-19-target-parquet-join.csv": "e26f5dbee43490e7f34576f0c21b2d76e4eaaae8c7b30ac71d03a5b0f69b67f9",
+    "data/sair-human-panel-coverage.csv": "676cd9762fcaf8bb423fc5e4a7ef5143fe190af1135710f80693565d7aca4252",
+    "data/receptor-interactome.csv": "54e6001d177723bfa010e872c67102ab82f582b9b713b7fb56152b5e5e62dfaf",
+    "data/human-neural-receptor-panel.csv": "33ae25cfaa9ef3d6be1fc1b26a18c74893e6ead528d9bde698d69e1fc82939f3",
+    "scripts/join_sair_parquet.py": "c40f6d084380f61e188d98aec4a856a90e4c0a997c0b32878f2e70c2c3e728ab",
+    "scripts/build_sair_coverage.py": "dee04b89e9c838735615550531a9d073bd775d8770b95e8b355c71ac3eb2d30b"
+  }
+}
