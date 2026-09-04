@@ -18,6 +18,7 @@ compounds = read("absinthe-compounds.csv")
 framework = read("psychedelic-framework.csv")
 identifiers = read("terpedia-identifiers.csv")
 interactome = read("receptor-interactome.csv")
+modulation_map = read("psychedelic-modulation-map.csv")
 panel = read("receptor-target-panel.csv")
 expanded_panel = read("human-neural-receptor-panel.csv")
 resolved_structures = read("terpedia-resolved-structure-records.csv")
@@ -41,6 +42,17 @@ assert {"primary target", "brain exposure", "phenomenology", "classification"} <
 }
 assert {"thujone", "limonene", "linalool"} <= {row["terpedia_label"] for row in identifiers}
 assert {"alpha-thujone", "trans-anethole", "linalool"} <= {row["compound"] for row in interactome}
+assert len(modulation_map) == len(compounds)
+assert {row["compound"] for row in modulation_map} == {row["compound"] for row in compounds}
+assert {row["modulation_level"] for row in modulation_map} <= {
+    "directly characterized", "preclinical candidate", "unresolved", "unestablished", "unassessed"
+}
+assert {row["evidence_status"] for row in modulation_map} >= {
+    "supported for GABA-A; HTR2A unestablished", "supported for TRPA1; HTR2A unestablished",
+    "candidate", "unresolved", "unassessed"
+}
+assert sum(row["modulation_level"] == "directly characterized" for row in modulation_map) == 3
+assert sum(row["modulation_level"] == "unassessed" for row in modulation_map) == 3
 assert {"direct binding and functional electrophysiology", "no qualifying interaction located"} <= {
     row["evidence_class"] for row in interactome
 }

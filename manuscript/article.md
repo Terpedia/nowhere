@@ -68,7 +68,15 @@ Terpedia's absinthe record associates fenchone with Florence fennel and pinocamp
 
 Trans-anethole is the dominant reported volatile in the repository COA. Terpedia's compound record emphasizes aroma, metabolism, and preclinical pharmacology rather than 5-HT2A agonism. Linalool has preclinical CNS and GABA-A-relevant literature, but that is not equivalent to a classic psychedelic mechanism. Estragole and methyleugenol raise toxicological questions; limonene, pinene, myrcene, cineole, aldehydes, and sesquiterpenes contribute to a chemically complex mixture. The correct conclusion for this group is not “inactive,” but “no established classic psychedelic evidence in the current Terpedia record.”
 
-### 5.4 Ethanol and preparation context
+### 5.4 Mixture-level modulation map
+
+The complete 29-compound map separates plausible modifiers from compounds that are merely present in the analytical inventory. Three volatile constituents have an evidence-qualified neural or sensory-neural edge: alpha-thujone and beta-thujone at the GABA-A picrotoxin/convulsant site, and trans-anethole at TRPA1. Linalool is a preclinical GABA-A-relevant candidate. Fenchone and pinocamphone remain safety-oriented GABA-A comparators, while the remaining volatile entries have no qualifying compound–receptor edge in the inspected Terpedia and SAIR releases. The nonvolatile entries absinthin, artabsin, and rosmarinic acid remain unassessed in this receptor map.
+
+This is the relevant modulation hypothesis for the psychedelic question: thujones could reduce inhibitory tone and alter arousal or salience; linalool could, if the reported preclinical activity survives exact-isomer and exposure testing, shift inhibitory tone in the opposite direction; and trans-anethole could change sensory input through TRPA1. These effects could make an ethanol-containing mixture feel different without supplying the cortical 5-HT2A mechanism used to classify classic serotonergic psychedelics. They must not be described as additive or synergistic: the current data contain no mixture experiment, brain-exposure measurements, or component-resolved concentration–response model.
+
+No inventory compound has a supported direct 5-HT2A edge. Alpha-thujone and trans-anethole are recorded as unresolved HTR2A tests, not as negative results. Accordingly, the map supports a testable hypothesis of non-5-HT2A modulation—especially inhibitory tone, sensory signaling, ethanol interaction, and toxicological excitation—but does not support a psychedelic classification. The machine-readable assignments, including the 23 compounds with no qualifying edge or no receptor assessment, are in `data/psychedelic-modulation-map.csv`.
+
+### 5.5 Ethanol and preparation context
 
 Ethanol is not a minor confounder: it is the beverage matrix and produces dose-dependent intoxication, disinhibition, sedation, memory impairment, and, with chronic exposure or withdrawal, severe neuropsychiatric effects. Absinthe effects must therefore be compared with an ethanol-matched spirit and, ideally, a botanical-matched alcohol-free or de-aromatized control. The louche changes dispersion and sensory expectation, but a visible colloidal transition is not a pharmacological assay.
 
@@ -92,6 +100,7 @@ The phrase “absinthe is psychedelic” compresses at least three distinct clai
 | Historical absinthism proves a psychedelic mechanism | Not supported | Historical symptom reports are non-specific and confounded |
 | Resolved absinthe structures have SAIR projection or full-parquet matches | No match found in the inspected releases | 36 unique compound-SMILES records representing all 29 inventory compounds; 684 human-panel compound-target rows; no isomeric or connectivity-only match; not biological absence |
 | Absinthe terpene–receptor edges are all experimentally established | Not supported | The network separates direct assays, preclinical modulation, candidate hypotheses, and unresolved target tests |
+| The 29-compound mixture may contain non-5-HT2A modulators | Plausible but unquantified | Supported GABA-A and TRPA1 edges, a linalool candidate, and unresolved comparators do not establish direction, synergy, CNS exposure, or psychedelic action |
 
 ### Conclusion
 
@@ -99,7 +108,7 @@ On the Terpedia evidence currently assembled, absinthe should be classified as a
 
 ## 8. Limitations and next experiments
 
-The COA lacks raw chromatograms, reference-standard traces, calibration files, bottle identity, alcohol-by-volume confirmation, and independent replication. Terpedia's authenticated public API and content-addressed SAIR interaction projection were queried, but direct BigQuery access and the full SAIR structure-parquet join remain operationally separate from the public projection. Several compounds still have ambiguous stereoisomer assignment or source-label discrepancies, and one inventory name lacks a Terpedia structure match. Literature coverage is a first-pass map rather than a systematic review with registered search strings and dual screening.
+The COA lacks raw chromatograms, reference-standard traces, calibration files, bottle identity, alcohol-by-volume confirmation, and independent replication. Terpedia's authenticated public API and content-addressed SAIR interaction projection were queried, while the full SAIR structure parquet was queried remotely through its published object. Several compounds still have ambiguous stereoisomer assignment or source-label discrepancies; trans-sabinyl acetate is represented through an explicitly supplemental structure crosswalk rather than a native EssoilDB structure field. Literature coverage is a first-pass map rather than a systematic review with registered search strings and dual screening.
 
 The smallest decisive experimental program is:
 

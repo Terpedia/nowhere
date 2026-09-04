@@ -21,6 +21,7 @@ The project does not assume that absinthe is psychedelic. It will test the claim
 - `data/sair-human-panel-evidence-summary.csv` — SAIR assay/potency/pIC50/docking-field availability by human target.
 - `data/reproducibility-manifest.json` — source-object references and SHA-256 hashes for the release inputs, outputs, and workflows.
 - `data/receptor-interactome.csv` — initial evidence-qualified compound–receptor edges.
+- `data/psychedelic-modulation-map.csv` — one-row-per-compound modulation interpretation across the full 29-compound inventory, with evidence boundaries.
 - `data/sair-release-metadata.json` — SAIR parquet retrieval, schema, row-count, and structure-join checkpoint.
 - `data/sair-canonical-join-results.csv` — seven-target canonical and non-isomeric join results, including the 18,145-row compatible-candidate scan.
 - `data/sair-expanded-join-summary.csv` — complete SAIR interaction-projection join summary for all resolved structure records.
