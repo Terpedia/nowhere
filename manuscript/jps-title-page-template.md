@@ -12,12 +12,11 @@ Review Article
 
 ## Authors and affiliations
 
-1. `[Author name]`, `[department/institution]`, `[city, country]`
-2. `[Author name]`, `[department/institution]`, `[city, country]`
+1. **Daniel C. McShan, PhD**, **Terpedia, LLC**
 
 ## Corresponding author
 
-`[Name, postal address, email address]`
+`Daniel C. McShan, PhD — postal address and email address to be supplied`
 
 ## Declarations
 

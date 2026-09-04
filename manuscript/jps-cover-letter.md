@@ -16,4 +16,5 @@ Thank you for your consideration.
 
 Sincerely,
 
-The authors
+Daniel C. McShan, PhD
+Terpedia, LLC
